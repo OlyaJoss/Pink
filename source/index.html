@@ -1,12 +1,130 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8" />
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">
+              Фотографии
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Конкурс
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">
+      Приложение «Pink» — Взгляните на жизнь иначе!
+    </h1>
+
+    <section class="promo">
+      <header class="promo__header">
+        <h2 class="visually-hidden">Скачайте приложение</h2>
+        <p class="promo__slogan">
+          Взгляните на жизнь<br />
+          иначе!
+        </p>
+        <a href="https://apps.apple.com/ru/genre/ios/id36" download>Скачать приложение</a>
+        <ul class="promo__list">
+          <li class="promo__list-item">
+            <a href="https://apps.apple.com/ru/genre/ios/id36">Apple logo</a>
+          </li>
+          <li class="promo__list-item">
+            <a href="https://play.google.com/store/apps?hl=ru">Androind logo</a>
+          </li>
+          <li class="promo__list-item">
+            <a href="https://www.microsoft.com/ru-ru/store/apps/windows">Microsoft logo</a>
+          </li>
+        </ul>
+        <p class="promo__info">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </header>
+    </section>
+
+    <article class="advantages">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <p class="advantages__text">
+        Устали от серости мегаполиса? Нам есть, что вам</p>
+      <p class="advantages__text">предложить!
+      </p>
+      <div class="advantages__wrapper">
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--mood">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__description">
+              Приложение позволит вам победить осеннюю хандру и депрессию
+              буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="advantages__item advantages__item--change">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__description">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью,
+              чтобы усилить эффект
+            </p>
+          </li>
+          <li class="advantages__item advantages__item--friends">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__description">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+              заводите новых
+            </p>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__logo">Приложение «Pink»</div>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </footer>
+</body>
+
 </html>

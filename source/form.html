@@ -44,13 +44,116 @@
   </header>
 
   <main class="page-main">
+    <h1 class="visually-hidden">Форма конкурса</h1>
     <div class="form">
       <h2 class="form__promo">
         Конкурс на самое безбашенное путешествие с Пинк
       </h2>
+      <section class="form__container">
+        <h3 class="form__black-title">
+          Поделитесь своей историей и получите<br>
+          шанс выиграть ценный приз — 1000<br>
+          миль на вашу бонусную карту!
+        </h3>
+        <form method="post" action="http://echo.htmlacademy.ru">
+          <div class="form__full-name">
+            <p>
+              <label class="form__label-text" for="surname-surname">Фамилия:</label>
+              <input class="form__input-text" id="surname-surname" type="text" name="surname"
+                placeholder="Укажите фамилию *">
+            </p>
+            <p>
+              <label class="form__label-text" for="name-name">Имя:</label>
+              <input class="form__input-text" id="name-name" type="text" name="name" placeholder="Введите ваше имя *">
+            </p>
+            <p>
+              <label class="form__label-text" for="patronymic-name">Отчество:</label>
+              <input class="form__input-text" id="patronymic-name" type="text" name="patronymic"
+                placeholder="Ну и отчество тоже">
+            </p>
+          </div>
+          <div class="form__achievements">
+            <h3 class="form__red-title">Ваши безбашенные достижения в путешествии</h3>
+            <p>
+              <label class="form__text">
+                <input class="form__checkbox-text" type="checkbox" name="remember" checked>
+                Сделал селфи с акулой</label>
+            </p>
+            <p>
+              <label class="form__text">
+                <input class="form__checkbox-text" type="checkbox" name="remember" checked>
+                Обгорел на пляже</label>
+            </p>
+            <p>
+              <label class="form__text">
+                <input class="form__checkbox-text" type="checkbox" name="remember">
+                Видел Чака Норриса</label>
+            </p>
+            <p>
+              <label class="form__text">
+                <input class="form__checkbox-text" type="checkbox" name="remember">
+                Накупил сувениров</label>
+            </p>
+            <p>
+              <label class="form__text">
+                <input class="form__checkbox-text" type="checkbox" name="remember" checked>
+                Обгорел на пляже</label>
+            </p>
+            <p>
+              <label class="form__text">
+                <input class="form__checkbox-text" type="checkbox" name="remember" checked>
+                Удержал башню</label>
+            </p>
+            <p>
+              <label class="form__text">
+                <input class="form__checkbox-text" type="checkbox" name="remember">
+                Накупил сувениров</label>
+            </p>
+            <p>
+              <label class="form__text">
+                <input class="form__checkbox-text" type="checkbox" name="remember">
+                Разгромил отель</label>
+            </p>
+          </div>
+          <div class="form-contacts">
+            <p>
+              <label class="form__label-text" for="phone-number">Номер телефона</label>
+              <input class="form__input-text" id="phone-number" type="tel" name="phone" placeholder="Номер, пожалуйста">
+            </p>
+            <p>
+              <label class="form__label-text" for="your-email">Адрес почты</label>
+              <input class="form__input-text" id="your-email" type="email" name="users-email"
+                placeholder="Введите почту *">
+            </p>
+          </div>
+          <div class="form__apps">
+            <h3 class="form__red-title">С каким приложением путешествовали?</h3>
+            <p>
+              <input type="radio" id="iOS" name="pink-iOS" checked>
+              <label class="form__text" for="iOS">Pink для iOS</label>
+            </p>
+            <p>
+              <input type="radio" id="Android" name="pink-Android">
+              <label class="form__text" for="Android">Pink на Android</label>
+            </p>
+            <p>
+              <input type="radio" id="Windows" name="pink-Windows">
+              <label class="form__text" for="Windows">Windows Phone</label>
+            </p>
+          </div>
+          <div class="form__emotions">
+            <h3 class="form__red-title">Опишите свои эмоции</h3>
+            <textaria class="form__text-aria">Можно прям в красках, не стесняясь в выражениях</textaria>
+          </div>
+          <div class="form__button">
+            <button class="form__submit-button" type="submit">Отправить форму</button>
+            <p class="form__required-text"><span class="form__symbol">*</span> &mdash; обязательные <span
+                class="form__desktop-text">для заполнения</span> поля</p>
+          </div>
+        </form>
+      </section>
     </div>
   </main>
-
   <footer class="page-footer">
     <div class="page-footer__logo">
       <img src="img/pink.svg" width="74" height="23" alt="Приложение «Pink»" />

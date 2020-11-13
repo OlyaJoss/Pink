@@ -11,20 +11,28 @@
   background-color: @dark-gray;
 }
 
-.form__black-title {
+.form__title {
   font-weight: 400;
   line-height: 30px;
   text-align: center;
   color: @basic-gray;
 }
 
-.form__label-text {
+.form__title--red {
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: @basic-pink;
+  text-transform: uppercase;
+}
+
+.form__text--label {
   line-height: 30px;
   color: @basic-pink;
   text-transform: uppercase;
 }
 
-.form__input-text {
+.form__text--input::placeholder {
   font-size: 18px;
   line-height: 30px;
   color: @basic-gray;
@@ -34,27 +42,25 @@
   background-color: @light-gray;
 }
 
-.form__red-title {
-  font-weight: 400;
-  line-height: 18px;
-  text-align: center;
-  color: @basic-pink;
-  text-transform: uppercase;
-}
-
 .form__text {
   font-size: 18px;
   line-height: 30px;
   color: @basic-gray;
 }
 
-.form__text-aria {
+.form__text-area {
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
+  height: 197px;
+  width: 276px;
+  align-items: center;
   color: @basic-gray;
+  border: 2px solid @light-gray;
+  border-radius: 1px;
 }
 
-.form__submit-button {
+.form__button--submit {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -66,7 +72,7 @@
   color: @basic-pink;
 }
 
-.form__required-text {
+.form__text--required {
   line-height: 30px;
   text-transform: uppercase;
   color: @basic-gray;

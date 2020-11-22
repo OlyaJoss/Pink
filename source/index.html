@@ -9,15 +9,17 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo"><svg class="page-header__svg" xmlns="http://www.w3.org/2000/svg" width="147"
-        height="40" viewBox="0 0 147 40"></svg>
+  <div class="page-header__wrapper container" >
+    <div class="page-header__wrapper page-header__wrapper--top">
+    <a class="page-header__logo"><svg class="page-header__svg" xmlns="http://www.w3.org/2000/svg" width="74px" viewBox="0 0 147 40"></svg>
     </a>
+    <button class="page-header__toggle" type="button">
+      <span class="visually-hidden">Меню</span>
+    </button>
+    </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Меню</span>
-      </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list main-nav__list--hidden site-list">
           <li>
             <a class="site-list__item site-list__item--active">
               Главная
@@ -41,6 +43,7 @@
         </ul>
       </div>
     </nav>
+  </div>
   </header>
 
   <main class="page-main">
@@ -51,34 +54,41 @@
     <section class="promo">
       <header class="promo__header">
         <h2 class="visually-hidden">Скачайте приложение</h2>
-        <p class="promo__slogan">
+        <div class="promo__wrapper container">
+          <div class="promo__wrapper promo__wrapper--slogan">
+        <p class="promo__slogan ">
           Взгляните на жизнь<br />
           иначе!
         </p>
+          </div>
         <a class="promo__button" href="https://apps.apple.com/ru/genre/ios/id36" download>Скачать приложение</a>
         <ul class="promo__list">
-          <li class="promo__list-item">
+          <li class="promo__list promo__list--item">
             <a href="https://apps.apple.com/ru/genre/ios/id36">Apple logo</a>
           </li>
-          <li class="promo__list-item">
+          <li class="promo__list promo__list--item">
             <a href="https://play.google.com/store/apps?hl=ru">Androind logo</a>
           </li>
-          <li class="promo__list-item">
+          <li class="promo__list promo__list--item">
             <a href="https://www.microsoft.com/ru-ru/store/apps/windows">Microsoft logo</a>
           </li>
         </ul>
         <p class="promo__info">
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
+        </div>
       </header>
     </section>
 
     <article class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
+      <div class="advantages__wrapper container">
       <p class="advantages__text">
         Устали от серости мегаполиса?</p>
-      <p class="advantages__text">Нам есть, что вам предложить!</p>
-      <div class="advantages__wrapper">
+      <p class="advantages__text">
+        Нам есть, что вам<br> предложить!</p>
+      </div>
+      <div class="advantages__list-wrapper">
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--mood">
             <h3 class="advantages__title">Поднимает настроение</h3>

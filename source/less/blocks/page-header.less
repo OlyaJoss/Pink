@@ -7,6 +7,7 @@
   font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;
+  width: 100%;
   background-color: @basic-gray;
   color: @basic-white;
 }
@@ -16,4 +17,30 @@
 
   outline: 5px solid rgba(255, 0, 0, 0.8);
   outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    height: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 40px;
+  }
+}
+
+.page-header__wrapper {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page-header__wrapper--top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-header__toggle {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }

@@ -1,5 +1,7 @@
 .advantages {
   background-color: @basic-white;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages__text {
@@ -8,10 +10,25 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+  margin: 0 auto;
   color: @basic-gray;
+  padding: 0;
 }
 
 .advantages__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+  background-color: @basic-white;
+
+  @media (max-width: @mobile-width) {
+    min-height: 250px;
+    justify-content: space-around;
+  }
+}
+
+.advantages__list-wrapper {
   background-color: @light-gray;
 }
 

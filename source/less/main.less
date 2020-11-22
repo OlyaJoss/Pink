@@ -2,6 +2,17 @@
   font-family: Open Sans;
   font-style: normal;
   color: @basic-black;
+  box-sizing: border-box;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr max-content 1fr;
+  align-content: start;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 .visually-hidden {

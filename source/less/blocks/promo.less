@@ -6,6 +6,23 @@
   line-height: 24px;
   background-color: @dark-gray;
   color: @basic-white;
+  margin: 0;
+  padding-top: 29px;
+  padding-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 102px;
+    padding-bottom: 119px;
+    padding-left: 20px;
+    padding-right: 340px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 114px;
+    padding-bottom: 130px;
+    padding-left: 130px;
+    padding-right: 766px;
+  }
 }
 
 .promo__button {
@@ -14,19 +31,40 @@
   line-height: 18px;
   color: @basic-white;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 .promo__slogan {
   font-size: 24px;
   line-height: 29px;
   margin: 0;
+  padding: 0;
+}
+
+.promo__wrapper--slogan {
+  @media (max-width: @mobile-width) {
+    padding-top: 29px;
+    padding-bottom: 320px;
+  }
 }
 
 .promo__info {
   margin: 0;
+  padding: 0;
 }
 
 .promo__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 35px;
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+.promo__wrapper {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
 }

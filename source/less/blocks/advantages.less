@@ -1,11 +1,10 @@
 .advantages {
-  background-color: @basic-white;
   margin: 0;
   padding: 0;
 }
 
 .advantages__text {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -13,6 +12,11 @@
   margin: 0 auto;
   color: @basic-gray;
   padding: 0;
+  margin-bottom: 25px;
+
+  @media (max-width: @middle-width) {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__wrapper {
@@ -22,7 +26,7 @@
   padding: 0;
   background-color: @basic-white;
 
-  @media (max-width: @mobile-width) {
+  @media (max-width: @small-width) {
     min-height: 250px;
     justify-content: space-around;
   }
@@ -30,15 +34,38 @@
 
 .advantages__list-wrapper {
   background-color: @light-gray;
+  width: 100%;
 }
 
 .advantages__list {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  text-align: center;
   list-style: none;
+  padding: 0;
+  padding-bottom: 325px;
+  margin: 0;
   color: @basic-black;
+
+  @media (min-width: @middle-width) {
+    text-align: left;
+    padding-left: 310px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: @large-width) {
+    grid-template-columns: 189px 189px 189px;
+    column-gap: 20px;
+    justify-content: center;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 432px;
+    padding-bottom: 0;
+  }
 }
 
 .advantages__title {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -46,7 +73,7 @@
 }
 
 .advantages__description {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;

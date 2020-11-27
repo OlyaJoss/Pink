@@ -1,5 +1,13 @@
 .container {
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0 10px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 280px;
+
+  @media (min-width: @middle-width) {
+    grid-template-columns: 620px;
+  }
+
+  @media (min-width: @large-width) {
+    grid-template-columns: 940px;
+  }
 }

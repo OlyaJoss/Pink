@@ -1,0 +1,38 @@
+.effect {
+  margin: 0;
+
+  @media (min-width: @middle-width) {
+    background-color: @basic-white;
+    padding-left: 310px;
+  }
+
+  @media (max-width: @small-width) {
+    display: none;
+  }
+
+  @media (min-width: @large-width) {
+    background-color: @light-gray;
+    padding-left: 370px;
+  }
+}
+
+.effect__legend--heading {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: @basic-black;
+}
+
+.effect__legend--text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: @basic-gray;
+}
+
+.effect__legend--link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: @basic-pink;
+}

@@ -1,7 +1,7 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -18,11 +18,11 @@
   outline: 5px solid rgba(255, 0, 0, 0.8);
   outline-offset: -5px;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @middle-width) {
     height: 40px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @large-width) {
     height: 40px;
   }
 }
@@ -40,7 +40,7 @@
 }
 
 .page-header__toggle {
-  @media (min-width: @desktop-width) {
+  @media (min-width: @large-width) {
     display: none;
   }
 }

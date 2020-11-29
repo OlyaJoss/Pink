@@ -1,6 +1,19 @@
 .plans {
+  margin: 0 auto;
   background-color: @light-gray;
 }
 
+@media (max-width: @small-width) {
+  .plans--wrapper {
+    margin: 0 auto;
+    overflow: hidden;
+  }
 
+  .plans__price--base {
+    display: none;
+  }
 
+  .plans__price--unlimited {
+    display: none;
+  }
+}

@@ -1,12 +1,15 @@
 .page-footer {
-  font-family: "Open Sans";
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+  font-family: "Open Sans", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
   color: @basic-gray;
   background-color: @basic-white;
+
+  @media (min-width: @middle-width) {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
 }
 
 .social__link {

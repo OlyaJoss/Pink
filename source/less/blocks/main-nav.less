@@ -1,17 +1,34 @@
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
-  list-style: none;
+  min-width: 320px;
 }
 
 
 
-@media (min-width: @desktop-width) {
+@media (min-width :@middle-width) {
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+
+@media (min-width: @large-width) {
   .main-nav__wrapper {
     width: 940px;
   }
+
   .main-nav__toggle {
     display: none;
   }
 }
-

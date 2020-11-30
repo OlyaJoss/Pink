@@ -1,7 +1,15 @@
 .page-footer {
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
   color: @basic-gray;
   background-color: @basic-white;
+
+  @media (min-width: @middle-width) {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
 }
 
 .social__link {
@@ -13,7 +21,3 @@
   color: @basic-pink;
   text-decoration: none;
 }
-
-
-
-

@@ -1,5 +1,13 @@
 .site-list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
+  padding: 0;
+  margin: 0 auto;
+
+  @media (min-width: @large-width) {
+    flex-direction: row;
+  }
 }
 
 .site-list__item {
@@ -7,7 +15,7 @@
   text-decoration: none;
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @large-width) {
   .site-list {
     width: 620px;
   }

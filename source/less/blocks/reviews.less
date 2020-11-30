@@ -1,6 +1,10 @@
 .reviews {
   background-color: @basic-white;
   text-align: center;
+
+  @media (min-width: @large-width) {
+    padding-top: 193px;
+  }
 }
 
 .reviews__user-name-top {
@@ -8,11 +12,20 @@
   font-style: normal;
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: @middle-width) {
+    display: none;
+  }
+}
+
+.reviews__item {
+  margin: 0;
 }
 
 .reviews__text {
   font-size: 14px;
   line-height: 30px;
+  margin: 0;
   color: @basic-gray;
 }
 
@@ -21,10 +34,18 @@
   font-style: normal;
   font-size: 20px;
   line-height: 30px;
+
+  @media (max-width: @small-width) {
+    display: none;
+  }
 }
 
 .reviews__user-info {
   font-size: 14px;
   line-height: 30px;
   color: @basic-gray;
+
+  @media (max-width: @small-width) {
+    display: none;
+  }
 }

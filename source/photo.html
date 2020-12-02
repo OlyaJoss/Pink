@@ -9,23 +9,25 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
-    <a href="index.html" class="page-header__logo">
-      Приложение «Pink»
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+  <header class="page-header container">
+    <div class="page-header__wrapper page-header__wrapper--top">
+      <a class="page-header__logo"><svg class="page-header__svg" xmlns="http://www.w3.org/2000/svg" width="74px"
+          viewBox="0 0 147 40"></svg>
+      </a>
+      <button class="page-header__toggle" type="button">
         <span class="visually-hidden">Меню</span>
       </button>
+    </div>
+    <nav class="main-nav">
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list main-nav__list--hidden site-list">
           <li>
-            <a class="site-list__item" href="index.html">
+            <a class="site-list__item site-list__item--active" href="index.html">
               Главная
             </a>
           </li>
           <li>
-            <a class="site-list__item site-list__item--active" href="photo.html">
+            <a class="site-list__item">
               Фотографии
             </a>
           </li>
@@ -40,21 +42,23 @@
             </a>
           </li>
         </ul>
+        <p class="page-header__promo">
+          Фотографии пользователей
+        </p>
       </div>
     </nav>
   </header>
 
   <main class="page-main">
     <h1 class="visually-hidden">Фотогалерея</h1>
-
-    <section class="gallery">
-      <h2 class="gallery__name">Фотографии пользователей</h2>
+    <section class="gallery container">
+      <h2 class="visually-hidden">Фотографии пользователей</h2>
       <p class="gallery__slogan gallery__slogan--top">
         Взгляните на фотографии, которые выкладывают пользователи! Видите, как
         не хватает ваших?
       </p>
 
-      <article class="gallery__item">
+      <article class="gallery__item gallery__item--big">
         <a href=""><img>Фото</img></a>
         <p class="gallery__item gallery__item--user-name">
           Анна<span class="gallery__item gallery__item--time">(5 минут назад)</span>
@@ -67,94 +71,102 @@
         <span class="gallery__likes">Нравится: 215</span>
         <button class="gallery__button-like" type="button">Сердечко</button>
       </article>
+      <div class="gallery__item-wrapper">
+        <article class="gallery__item gallery__item--small">
+          <a href=""><img>Фото</img></a>
+          <p class="gallery__item gallery__item--user-name">
+            Левон<span class="gallery__item gallery__item--time">(5 часов назад)</span>
+          </p>
+          <p class="gallery__item gallery__item--description">
+            Вчера он на луну летал, сегодня в руки к нам попал.
+          </p>
+          <span class="gallery__likes">Нравится: 356</span>
+          <button class="gallery__button-like" type="button">Сердечко</button>
+        </article>
 
-      <article class="gallery__item">
-        <a href=""><img>Фото</img></a>
-        <p class="gallery__item gallery__item--user-name">
-          Левон<span class="gallery__item gallery__item--time">(5 часов назад)</span>
-        </p>
-        <p class="gallery__item gallery__item--description">
-          Вчера он на луну летал, сегодня в руки к нам попал.
-        </p>
-        <span class="gallery__likes">Нравится: 356</span>
-        <button class="gallery__button-like" type="button">Сердечко</button>
-      </article>
+        <article class="gallery__item gallery__item--small">
+          <a href=""><img>Фото</img></a>
+          <p class="gallery__item gallery__item--user-name">
+            Антон<span class="gallery__item gallery__item--time">(12 часов назад)</span>
+          </p>
+          <p class="gallery__item gallery__item--description">Соседи будут рады!</p>
+          <span class="gallery__likes">Нравится: 666</span>
+          <button class="gallery__button-like" type="button">Сердечко</button>
+        </article>
 
-      <article class="gallery__item">
-        <a href=""><img>Фото</img></a>
-        <p class="gallery__item gallery__item--user-name">
-          Антон<span class="gallery__item gallery__item--time">(12 часов назад)</span>
-        </p>
-        <p class="gallery__item gallery__item--description">Соседи будут рады!</p>
-        <span class="gallery__likes">Нравится: 666</span>
-        <button class="gallery__button-like" type="button">Сердечко</button>
-      </article>
+        <article class="gallery__item gallery__item--small">
+          <a href=""><img>Фото</img></a>
+          <p class="gallery__item gallery__item--user-name">
+            Борис<span class="gallery__item gallery__item--time">(20 часов назад)</span>
+          </p>
+          <p class="gallery__item gallery__item--description">
+            Здесь могла быть ваша цитата о высоком и вечном.
+          </p>
+          <span class="gallery__likes">Нравится: 215</span>
+          <button class="gallery__button-like" type="button">Сердечко</button>
+        </article>
 
-      <article class="gallery__item">
-        <a href=""><img>Фото</img></a>
-        <p class="gallery__item gallery__item--user-name">
-          Борис<span class="gallery__item gallery__item--time">(20 часов назад)</span>
-        </p>
-        <p class="gallery__item gallery__item--description">
-          Здесь могла быть ваша цитата о высоком и вечном.
-        </p>
-        <span class="gallery__likes">Нравится: 215</span>
-        <button class="gallery__button-like" type="button">Сердечко</button>
-      </article>
+        <article class="gallery__item gallery__item--small">
+          <a href=""><img>Фото</img></a>
+          <p class="gallery__item gallery__item--user-name">
+            Сергей<span class="gallery__item gallery__item--time">(25 часов назад)</span>
+          </p>
+          <p class="gallery__item gallery__item--description">Самая кубанская в мире!</p>
+          <span class="gallery__likes">Нравится: 4</span>
+          <button class="gallery__button-like" type="button">Сердечко</button>
+        </article>
 
-      <article class="gallery__item">
-        <a href=""><img>Фото</img></a>
-        <p class="gallery__item gallery__item--user-name">
-          Сергей<span class="gallery__item gallery__item--time">(25 часов назад)</span>
-        </p>
-        <p class="gallery__item gallery__item--description">Самая кубанская в мире!</p>
-        <span class="gallery__likes">Нравится: 4</span>
-        <button class="gallery__button-like" type="button">Сердечко</button>
-      </article>
+        <article class="gallery__item gallery__item--small">
+          <a href=""><img>Фото</img></a>
+          <p class="gallery__item gallery__item--user-name">
+            Максим<span class="gallery__item gallery__item--time">(40 часов назад)</span>
+          </p>
+          <p class="gallery__item gallery__item--description">Где снег-то?</p>
+          <span class="gallery__likes">Нравится: 150</span>
+          <button class="gallery__button-like" type="button">Сердечко</button>
+        </article>
 
-      <article class="gallery__item">
-        <a href=""><img>Фото</img></a>
-        <p class="gallery__item gallery__item--user-name">
-          Максим<span class="gallery__item gallery__item--time">(40 часов назад)</span>
-        </p>
-        <p class="gallery__item gallery__item--description">Где снег-то?</p>
-        <span class="gallery__likes">Нравится: 150</span>
-        <button class="gallery__button-like" type="button">Сердечко</button>
-      </article>
-
-      <article class="gallery__item">
-        <a href=""><img>Фото</img></a>
-        <p class="gallery__item gallery__item--user-name">
-          Надежда<span class="gallery__item gallery__item--time">(45 часов назад)</span>
-        </p>
-        <p class="gallery__item gallery__item--description">Всем GM и взаимные лайки!</p>
-        <span class="gallery__likes">Нравится: 2560</span>
-        <button class="gallery__button-like" type="button">Сердечко</button>
-      </article>
+        <article class="gallery__item gallery__item--small">
+          <a href=""><img>Фото</img></a>
+          <p class="gallery__item gallery__item--user-name">
+            Надежда<span class="gallery__item gallery__item--time">(45 часов назад)</span>
+          </p>
+          <p class="gallery__item gallery__item--description">Всем GM и взаимные лайки!</p>
+          <span class="gallery__likes">Нравится: 2560</span>
+          <button class="gallery__button-like" type="button">Сердечко</button>
+        </article>
+      </div>
 
       <p class="gallery__slogan gallery__slogan--bottom">Затмите их всех!<br>
         Выкладывайте все, что накопилось в телефоне!</p>
     </section>
 
     <section class="filter">
-      <img></img>
-      <ul class="filter__tools">
-        <li>Crop</li>
-        <li>Fill</li>
-        <li>Contrast</li>
-      </ul>
-      <div class="filter__scale">
-        <button class="filter__button-scale" type="button"></button>
-      </div>
-      <div class="filter__scale">
-        <button class="filter__button-scale" type="button"></button>
-      </div>
-      <div class="filter__scale">
-        <button class="filter__button-scale" type="button"></button>
-      </div>
-      <div class="filter__button">
-        <button class="filter__button filter__button--load" type="submit">Запостить</button>
-        <button class="filter__button filter__button--cancel" type="reset">Отмена</button>
+      <div class="container">
+        <div class="filter__picture-wrapper">
+          <img width="280" height="300"></img>
+        </div>
+        <div class="filter__tools-wrapper">
+          <ul class="filter__tools">
+            <li>Crop</li>
+            <li>Fill</li>
+            <li>Contrast</li>
+          </ul>
+          <div class="filter__scale">
+            <button class="filter__button-scale" type="button"></button>
+          </div>
+          <div class="filter__scale">
+            <button class="filter__button-scale" type="button"></button>
+          </div>
+          <div class="filter__scale">
+            <button class="filter__button-scale" type="button"></button>
+          </div>
+
+          <div class="filter__button-wrapper">
+            <button class="filter__button filter__button--load" type="submit">Запостить</button>
+            <button class="filter__button filter__button--cancel" type="reset">Отмена</button>
+          </div>
+        </div>
       </div>
     </section>
   </main>

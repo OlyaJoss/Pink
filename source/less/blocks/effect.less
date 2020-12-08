@@ -1,9 +1,6 @@
 .effect {
   margin: 0;
-
-  @media (min-width: @middle-width) {
-    background-color: @basic-white;
-  }
+  background-color: @basic-white;
 
   @media (max-width: @small-width) {
     display: none;
@@ -11,6 +8,14 @@
 
   @media (min-width: @large-width) {
     background-color: @light-gray;
+  }
+}
+
+.effect__wrapper {
+  padding-left: 310px;
+
+  @media (min-width: @large-width) {
+    padding-left: 370px;
   }
 }
 
@@ -32,5 +37,6 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  text-decoration: underline;
   color: @basic-pink;
 }

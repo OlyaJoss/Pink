@@ -1,12 +1,12 @@
 .filter {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  justify-content: center;
   background-color: @light-gray;
+}
+
+.filter__wrapper {
 
   @media (min-width: @middle-width) {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: @middle-width) {
+  @media (min-width: @large-width) {
     flex-direction: row;
     justify-content: space-between;
   }

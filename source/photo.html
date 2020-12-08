@@ -49,28 +49,28 @@
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page-main gallery">
     <h1 class="visually-hidden">Фотогалерея</h1>
-    <section class="gallery container">
-      <h2 class="visually-hidden">Фотографии пользователей</h2>
-      <p class="gallery__slogan gallery__slogan--top">
-        Взгляните на фотографии, которые выкладывают пользователи! Видите, как
-        не хватает ваших?
-      </p>
 
-      <article class="gallery__item gallery__item--big">
-        <a href=""><img>Фото</img></a>
+    <article class="gallery__item-big">
+      <a href="" class="gallery__big-photo"><img src="img/panorama-desktop@1x.jpg" width="100%"></a>
+      <span class="gallery__item-accent">Панорама дня</span>
+      <div class="gallery__description-wrapper">
         <p class="gallery__item gallery__item--user-name">
           Анна<span class="gallery__item gallery__item--time">(5 минут назад)</span>
         </p>
-        <span class="gallery__item gallery__item--accent">Панорама дня</span>
+
         <p class="gallery__item gallery__item--description">
           Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
           трансляцию в перископе, задавайте свои вопросы!
         </p>
         <span class="gallery__likes">Нравится: 215</span>
         <button class="gallery__button-like" type="button">Сердечко</button>
-      </article>
+      </div>
+    </article>
+
+    <section class="container">
+      <h2 class="visually-hidden">Фотографии пользователей</h2>
       <div class="gallery__item-wrapper">
         <article class="gallery__item gallery__item--small">
           <a href=""><img>Фото</img></a>
@@ -141,10 +141,10 @@
         Выкладывайте все, что накопилось в телефоне!</p>
     </section>
 
-    <section class="filter">
-      <div class="container">
+    <section class="filter container">
+      <div class="filter__wrapper">
         <div class="filter__picture-wrapper">
-          <img width="280" height="300"></img>
+          <img>Photo</img>
         </div>
         <div class="filter__tools-wrapper">
           <ul class="filter__tools">

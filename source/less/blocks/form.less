@@ -142,20 +142,27 @@
   font-size: 18px;
   line-height: 30px;
   color: @basic-gray;
-  align-items: center;
 }
-
 
 .form__achievements,
 .form__apps {
-  background-color: @light-gray;
+
+  @media (min-width: @small-width) {
+    background-color: @light-gray;
+    margin: 0 calc(-50vw + 50%);
+    padding-left: 70px;
+  }
 
   @media (min-width: @middle-width) {
     background-color: @basic-white;
+    margin: 0 auto;
+    padding-left: 0;
   }
 
   @media (min-width: @large-width) {
     background-color: @basic-white;
+    margin: 0 auto;
+    padding-left: 0;
   }
 }
 

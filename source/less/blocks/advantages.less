@@ -38,31 +38,104 @@
 }
 
 .advantages__list {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  display: block;
+  position: relative;
   text-align: center;
   list-style: none;
   padding: 0;
   padding-bottom: 325px;
   margin: 0;
   color: @basic-black;
+  overflow: hidden;
+
+  @media (min-width: @small-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url('../../img/iphone-screen-mobile@2x.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 157px;
+      height: 320px;
+      left: 70px;
+      top: 450px;
+    }
+  }
 
   @media (min-width: @middle-width) {
     text-align: left;
     padding-left: 310px;
     padding-bottom: 0;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url('../../img/iphone-screen-mobile@2x.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 268px;
+      height: 547px;
+      left: 0px;
+      top: -50px;
+    }
   }
 
   @media (min-width: @large-width) {
+    display: grid;
     grid-template-columns: 189px 189px 189px;
-    column-gap: 20px;
+    column-gap: 68px;
     justify-content: center;
     text-align: center;
     padding-left: 0;
     padding-top: 432px;
     padding-bottom: 0;
+
+    &::before {
+      display: none;
+    }
+
+    .advantages__item--mood::before {
+      content: "";
+      position: absolute;
+      background-image: url('../../img/iphone-screen-1-desktop@2x.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 186px;
+      height: 382px;
+      left: 0px;
+      top: 10px;
+    }
+
+    .advantages__item--change::before {
+      content: "";
+      position: absolute;
+      background-image: url('../../img/iphone-screen-2-desktop@2x.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 186px;
+      height: 382px;
+      left: 300px;
+      top: 10px;
+    }
+
+    .advantages__item--friends::before {
+      content: "";
+      position: absolute;
+      background-image: url('../../img/iphone-screen-3-desktop@2x.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 186px;
+      height: 382px;
+      left: 600px;
+      top: 10px;
+    }
   }
 }
+
 
 .advantages__title {
   font-family: "Open Sans", Arial, sans-serif;

@@ -7,6 +7,7 @@
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
+  text-align: center;
   list-style: none;
   padding: 0;
   margin: 0 auto;
@@ -19,8 +20,46 @@
 }
 
 .site-list__item {
+  position: relative;
+  display: block;
+  padding: 25px;
   color: @basic-white;
   text-decoration: none;
+  border-bottom: 1px solid @basic-black;
+  border-top: 1px solid fade(@basic-white, 15%);
+
+  @media (max-width: @middle-width) {
+    &:hover {
+      color: @basic-pink;
+    }
+
+    &:active {
+      color: fade(@basic-white, 30%);
+    }
+  }
+
+  @media (min-width: @large-width) {
+    border-bottom: none;
+    border-top: none;
+
+    &:hover {
+      color: @basic-pink;
+    }
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background: @basic-white;
+      }
+    }
+  }
 }
 
 @media (min-width: @large-width) {

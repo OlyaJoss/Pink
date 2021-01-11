@@ -1,6 +1,38 @@
 .social__list {
+  display: flex;
+  flex-direction: row;
   list-style: none;
+  margin: 0 auto;
+  padding: 0;
 }
 
+.social__item {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid fade(@basic-gray, 10%);
+  border-radius: 50%;
+  margin-right: 14px;
+}
 
+.social__item:last-child {
+  margin-right: 0;
+}
 
+.social__item:hover {
+  border: 3px solid @basic-gray;
+}
+
+.social__item:active {
+  border: 3px solid fade(@basic-gray, 10%);
+}
+
+.social__link svg {
+  fill: @basic-pink;
+}
+
+.social__link:active svg {
+  opacity: 0.3;
+}

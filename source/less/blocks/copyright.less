@@ -1,3 +1,8 @@
+.copyright {
+  display: flex;
+  margin: 40px auto;
+}
+
 .copyright__text {
   font-family: "Open Sans", Arial, sans-serif;
   font-style: normal;
@@ -5,4 +10,21 @@
   font-size: 14px;
   line-height: 18px;
   color: @basic-gray;
+  padding-top: 10px;
+  padding-right: 15px;
 }
+
+.copyright__link svg {
+  fill: @basic-pink;
+}
+
+.copyright__link:hover svg {
+  fill: @basic-gray;
+}
+
+.copyright__link:active svg {
+  fill: fade(@basic-gray, 30%);
+}
+
+
+

@@ -1,18 +1,22 @@
 .effect {
   margin: 0;
   background-color: @basic-white;
+  display: none;
 
-  @media (max-width: @small-width) {
-    display: none;
+  @media (min-width: @middle-width) {
+    display: block;
   }
 
   @media (min-width: @large-width) {
+    display: block;
     background-color: @light-gray;
   }
 }
 
 .effect__wrapper {
-  padding-left: 310px;
+  @media (min-width: @middle-width) {
+    padding-left: 310px;
+  }
 
   @media (min-width: @large-width) {
     padding-left: 370px;

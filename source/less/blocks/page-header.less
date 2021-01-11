@@ -3,17 +3,117 @@
   flex-direction: column;
   width: 100%;
   background-color: @dark-gray;
-  background-image: url("../../img/bg-back-mobile@2x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 330px;
   background-size: contain;
   color: @basic-white;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+
+  @media (min-width: @middle-width) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @middle-width) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
 }
 
-.page-header__svg {
+.page-header__logo {
+  height: 23px;
+  padding: 20px 23px;
   width: 74px;
   height: 23px;
+
+  @media (min-width: @middle-width) {
+    height: 40px;
+    width: 145px;
+    padding: 0;
+    padding: 27px 20px;
+    margin-bottom: 42px;
+
+  }
+
+  @media (min-width: @large-width) {
+    height: 40px;
+    grid-column: 2 e("/") 3;
+  }
 }
+
+.page-header__logo-small {
+  fill: @basic-white;
+
+  &:hover {
+    fill: @basic-pink;
+  }
+
+  &:active {
+    fill: fade(@basic-white, 30%);
+  }
+
+  @media (min-width: @middle-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-middle {
+  display: none;
+
+  @media (min-width: @middle-width) {
+    display: block;
+    fill: @basic-white;
+
+    &:hover {
+      fill: @basic-pink;
+    }
+
+    &:active {
+      fill: fade(@basic-white, 30%);
+    }
+  }
+
+  @media (min-width: @large-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-large {
+  display: none;
+
+  @media (min-width: @large-width) {
+    display: block;
+  }
+}
+
+.page-header__logo-large--pink {
+  fill: @basic-pink;
+}
+
+.page-header__logo-large--white {
+  fill: @basic-white;
+
+  &:hover {
+    fill: @basic-pink;
+  }
+
+  &:active {
+    fill: fade(@basic-white, 30%);
+  }
+}
+
 
 .page-header__wrapper-top {
   min-height: 66px;
@@ -23,20 +123,6 @@
 
   @media (min-width: @large-width) {
     display: grid;
-    grid-column: 2 e("/") 3;
-  }
-}
-
-.page-header__logo {
-  height: 23px;
-  padding: 20px 23px;
-
-  @media (min-width: @middle-width) {
-    height: 40px;
-  }
-
-  @media (min-width: @large-width) {
-    height: 40px;
     grid-column: 2 e("/") 3;
   }
 }

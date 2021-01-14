@@ -1,9 +1,9 @@
 .page-footer {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: @font-main;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+
   color: @basic-gray;
   background-color: @basic-white;
   margin: 0 auto;
@@ -17,5 +17,17 @@
 
 .page-footer__logo {
   text-align: center;
-  margin: 40px auto;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 33px;
+
+  @media (min-width: @middle-width) {
+    margin: 36px auto;
+    padding-right: 79px;
+  }
+
+  @media (min-width: @large-width) {
+    margin: 70px auto;
+    padding-right: 240px;
+  }
 }

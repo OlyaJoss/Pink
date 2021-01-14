@@ -1,5 +1,5 @@
 .site-list {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: @font-main;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -14,16 +14,20 @@
   margin: 0 auto;
 
   @media (min-width: @large-width) {
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: none;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 25px;
   }
 }
 
 .site-list__item {
   position: relative;
   display: block;
-  padding: 25px;
+  padding: 15px;
   color: @basic-white;
   text-decoration: none;
   border-bottom: 1px solid @basic-black;

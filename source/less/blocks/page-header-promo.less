@@ -1,6 +1,6 @@
 .page-header__promo {
   position: relative;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: @font-main;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -12,11 +12,11 @@
     position: absolute;
     background-image: url('../img/iphone-hand-mobile@1x.png');
     background-repeat: no-repeat;
-    background-size: 280px 286px;
-    width: 280px;
+    background-size: 259px 286px;
+    width: 259px;
     height: 286px;
-    top: 110px;
-    left: -20px;
+    top: 109px;
+    left: -21px;
 
     @media (min-resolution: 2dppx) {
       background-image: url('../img/iphone-hand-mobile@2x.png');
@@ -50,7 +50,7 @@
     &::after {
       content: "";
       position: absolute;
-      background-image: url('../../img/iphone-hand-desktop@1x.png');
+      background-image: url('../img/iphone-hand-desktop@1x.png');
       background-repeat: no-repeat;
       background-size: 1050px 645px;
       width: 1050px;
@@ -74,8 +74,8 @@
   text-align: center;
   color: @basic-white;
   text-decoration: none;
-  margin-top: 20px;
-  padding: 18px 34px;
+  margin-top: 23px;
+  padding: 15.5px 34px;
   border: 3px solid @basic-white;
   border-radius: 29px;
 
@@ -97,7 +97,7 @@
   font-size: 24px;
   line-height: 29px;
   margin: 0;
-  padding-top: 25px;
+  padding-top: 22px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 320px;
@@ -119,8 +119,8 @@
 
 .page-header__promo-info {
   margin: 0;
-  padding-top: 28px;
-  padding-bottom: 38px;
+  padding-top: 13px;
+  padding-bottom: 30px;
 
   @media (min-width: @middle-width) {
     padding-top: 38px;
@@ -136,7 +136,7 @@
 }
 
 .page-header__promo-list--item {
-  padding-top: 32px;
+  padding-top: 34px;
   padding-right: 35px;
 
   @media (min-width: @middle-width) {
@@ -146,6 +146,7 @@
 
 .page-header__promo-list--item:last-of-type {
   padding-right: 0;
+  padding-top: 41px;
 }
 
 .page-header__promo-wrapper {

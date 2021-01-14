@@ -4,22 +4,46 @@
   display: none;
 
   @media (min-width: @middle-width) {
-    display: block;
+    display: grid;
   }
 
   @media (min-width: @large-width) {
-    display: block;
-    background-color: @light-gray;
+    display: grid;
+    background-color: @silver-gray;
   }
 }
 
 .effect__wrapper {
+  position: relative;
+
   @media (min-width: @middle-width) {
     padding-left: 310px;
+    padding-top: 102px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      background-image: url('../img/timer-all.svg');
+      background-repeat: no-repeat;
+      background-size: 238px 276px;
+      width: 238px;
+      height: 276px;
+      left: 20px;
+      top: 54px;
+    }
   }
 
   @media (min-width: @large-width) {
     padding-left: 370px;
+    padding-top: 115px;
+    padding-bottom: 120px;
+
+    &:before {
+      top: 17px;
+      background-size: 298px 345px;
+      width: 298px;
+      height: 345px;
+    }
   }
 }
 
@@ -28,6 +52,7 @@
   font-size: 30px;
   line-height: 36px;
   color: @basic-black;
+  margin: 0;
 }
 
 .effect__legend--text {
@@ -35,6 +60,15 @@
   font-size: 14px;
   line-height: 24px;
   color: @basic-gray;
+  margin: 0;
+
+  @media (min-width: @large-width) {
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 37px;
+    padding-bottom: 47px;
+
+  }
 }
 
 .effect__legend--link {
@@ -43,4 +77,10 @@
   line-height: 24px;
   text-decoration: underline;
   color: @basic-pink;
+
+  @media (min-width: @large-width) {
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 0;
+  }
 }

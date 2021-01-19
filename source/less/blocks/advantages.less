@@ -1,6 +1,24 @@
 .advantages {
+  position: relative;
   margin: 0;
   padding: 0;
+}
+
+.advantages svg {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 1200px;
+  top: 148px;
+  fill: @basic-white;
+
+  @media (min-width: @large-width) {
+    top: 216px;
+  }
+
+  @media (min-width: @large-width) {
+    top: 244px;
+  }
 }
 
 .advantages__text {
@@ -9,6 +27,7 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+  z-index: 30;
   margin: 0 auto;
   color: @basic-gray;
   padding: 0;
@@ -33,9 +52,8 @@
   flex-direction: column;
   text-align: center;
   padding-top: 40px;
-  padding-bottom: 70px;
+  padding-bottom: 0;
   background-color: @basic-white;
-  min-height: 250px;
   justify-content: space-around;
 }
 
@@ -72,7 +90,7 @@
   list-style: none;
   padding: 0;
   padding-bottom: 287px;
-  padding-top: 14px;
+  padding-top: 84px;
   margin: 0;
   color: @basic-black;
 
@@ -91,6 +109,7 @@
       height: 547px;
       left: 20px;
       top: 10px;
+      z-index: 20px;
     }
   }
 
@@ -118,6 +137,7 @@
       height: 382px;
       left: 20px;
       top: 30px;
+      z-index: 30;
     }
 
     .advantages__item--change::before {
@@ -129,6 +149,7 @@
       height: 382px;
       left: 320px;
       top: 30px;
+      z-index: 30;
     }
 
     .advantages__item--friends::before {
@@ -140,6 +161,7 @@
       height: 382px;
       left: 620px;
       top: 30px;
+      z-index: 30;
     }
   }
 }

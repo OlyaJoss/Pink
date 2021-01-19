@@ -1,21 +1,136 @@
 .plans {
   margin: 0 auto;
-  background-color: @dark-gray;
-  min-height: 363px;
-  padding-bottom: 100px;
+  min-height: 279px;
+  padding-top: 48px;
 }
 
-@media (max-width: @small-width) {
-  .plans--wrapper {
-    margin: 0 auto;
-    overflow: hidden;
+.plans--wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: @silver-gray;
+  padding-top: 100px;
+}
+
+.plans__big-table {
+  width: 100%;
+  border-collapse: collapse;
+  transform: translate(-533px);
+
+  @media (min-width: @middle-width) {
+    transform: translate(0px);
+  }
+}
+
+.plans__header {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  min-width: 278px;
+  height: 99px;
+  text-transform: uppercase;
+  color: @basic-white;
+  text-align: center;
+  background-color: @dark-gray;
+  border: 2px solid @silver-gray;
+  border-top: 2px solid @silver-gray;
+  border-bottom: 2px solid @dark-gray;
+
+  @media (min-width: @middle-width) {
+    min-width: 152px;
+    height: 75px;
   }
 
-  .plans__price--base {
-    display: none;
+  @media (min-width: @large-width) {
+    min-width: 233px;
+    height: 94px;
+  }
+}
+
+.plans__header span {
+  font-weight: 300;
+}
+
+.plans__header--hit {
+  position: relative;
+  overflow: hidden;
+}
+
+.plans__header--hit-word {
+  content: "";
+  position: absolute;
+  background-color: @basic-pink;
+  border: none;
+  width: 100px;
+  height: 30px;
+  transform: translateX(-200px) translateY(-5px) rotate(-45deg);
+}
+
+
+.plans__tariff {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  min-width: 256px;
+  border: 2px solid @light-gray;
+
+  @media (min-width: @middle-width) {
+    min-width: 153px;
+    height: 45px;
   }
 
-  .plans__price--unlimited {
+  @media (min-width: @large-width) {
+    min-width: 234px;
+    height: 59px;
+  }
+}
+
+.plans__tariff--base span {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @media (min-width: @middle-width) {
     display: none;
   }
+}
+
+.plans__tariff--standart span {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: left;
+
+
+  @media (min-width: @middle-width) {
+    display: none;
+  }
+}
+
+.plans__tariff--unlimited span {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @media (min-width: @middle-width) {
+    display: none;
+  }
+}
+
+.plans__tariff--svg-no {
+  width: 27px;
+  height: 27px;
+  border: none;
+  padding: 0;
+  fill: @basic-orange;
+}
+
+.plans__tariff--svg-yes {
+  width: 31px;
+  height: 21px;
+  border: none;
+  padding: 0;
+  fill: @basic-green;
 }

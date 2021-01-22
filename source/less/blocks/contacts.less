@@ -1,4 +1,5 @@
 .contacts {
+  position: relative;
   display: block;
   background-color: @basic-white;
   color: @basic-gray;
@@ -7,9 +8,27 @@
   font-size: 24px;
   line-height: 29px;
 
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url('../../img/bg-triangle-white-footer.svg');
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 123px;
+    left: -158px;
+    right: 0;
+    top: 395px;
+    z-index: 5;
+  }
 
   @media (min-width: @middle-width) {
     display: grid;
+
+    &::after {
+      background-size: 1200px 123px;
+      top: 350px;
+      left: -290px;
+    }
   }
 }
 
@@ -30,8 +49,8 @@
     line-height: 55px;
     grid-column-start: 1;
     grid-column-end: 4;
-    padding-top: 55px;
-    padding-bottom: 51px;
+    padding-top: 43px;
+    padding-bottom: 32px;
   }
 
   @media (min-width: @large-width) {
@@ -42,13 +61,14 @@
   }
 }
 
-.contacts__block--number {
+
+.contacts__block-number {
   padding-bottom: 18px;
 
   @media (min-width: @middle-width) {
     grid-column-start: 1;
     grid-column-end: 2;
-    padding-left: 40px;
+    padding-left: 37px;
   }
 
   @media (min-width: @large-width) {
@@ -58,13 +78,13 @@
   }
 }
 
-.contacts__block--mail {
+.contacts__block-mail {
   padding-bottom: 22px;
 
   @media (min-width: @middle-width) {
     grid-column-start: 2;
     grid-column-end: 3;
-    padding-left: 21px;
+    padding-left: 79px;
   }
 
   @media (min-width: @large-width) {
@@ -74,13 +94,15 @@
   }
 }
 
-.contacts__block--adress {
+
+.contacts__block-adress {
   padding-bottom: 35px;
 
   @media (min-width: @middle-width) {
     grid-column-start: 1;
     grid-column-end: 3;
-    padding-left: 60px;
+    padding-left: 20px;
+    padding-top: 20px;
   }
 
   @media (min-width: @large-width) {
@@ -94,6 +116,11 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  z-index: 30;
+
+  @media (min-width: @middle-width) {
+    padding-bottom: 4px;
+  }
 }
 
 .contacts__text--red {
@@ -102,6 +129,7 @@
   line-height: 33px;
   color: @basic-pink;
   text-decoration: none;
+  z-index: 30;
 }
 
 .contacts__text--red:hover {

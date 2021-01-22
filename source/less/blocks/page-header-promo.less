@@ -25,18 +25,18 @@
 
   @media (min-width: @middle-width) {
 
-    height: 619px;
+    height: 618px;
 
     &::after {
       content: "";
       position: absolute;
       background-image: url('../img/iphone-hand-tablet@1x.png');
       background-repeat: no-repeat;
-      background-size: 660px 545px;
+      background-size: 701px 545px;
       width: 660px;
       height: 545px;
-      top: 74px;
-      left: 0;
+      top: 73px;
+      left: -41px;
 
       @media (min-resolution: 2dppx) {
         background-image: url('../img/iphone-hand-tablet@2x.png');
@@ -56,7 +56,7 @@
       width: 1050px;
       height: 645px;
       top: 98px;
-      left: 0;
+      left: 16px;
 
       @media (min-resolution: 2dppx) {
         background-image: url('../img/iphone-hand-desktop@2x.png');
@@ -74,13 +74,18 @@
   text-align: center;
   color: @basic-white;
   text-decoration: none;
-  margin-top: 24px;
+  margin-top: 23px;
   padding: 15.5px 34px;
   border: 3px solid @basic-white;
   border-radius: 29px;
 
   @media (min-width: @middle-width) {
     margin: 0;
+  }
+
+  @media (min-width: @large-width) {
+   font-size: 21px;
+   padding: 15.5px 28px;
   }
 }
 
@@ -97,7 +102,7 @@
   font-size: 24px;
   line-height: 29px;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 22px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 320px;
@@ -105,16 +110,17 @@
   @media (min-width: @middle-width) {
     font-size: 40px;
     line-height: 48px;
-    padding-top: 18px;
-    padding-bottom: 34px;
-    padding-right: 34px;
+    padding-top: 93px;
+    padding-bottom: 30px;
+    padding-right: 33px;
     margin-left: 13px;
   }
 
   @media (min-width: @large-width) {
     font-size: 50px;
     line-height: 68px;
-    padding-top: 114px;
+    padding-top: 99px;
+    padding-bottom: 37px;
   }
 }
 
@@ -126,7 +132,11 @@
   @media (min-width: @middle-width) {
     font-size: 18px;
     line-height: 24px;
-    padding-top: 13px;
+    padding-top: 25px;
+  }
+
+  @media (min-width: @large-width) {
+    padding-top: 43px;
   }
 }
 
@@ -136,6 +146,10 @@
   list-style: none;
   margin: 0 auto;
   padding: 0;
+
+  @media (min-width: @large-width) {
+    padding-top: 22px;
+  }
 }
 
 .page-header__promo-list--item {
@@ -144,12 +158,16 @@
 
   @media (min-width: @middle-width) {
     padding-top: 46px;
+    padding-right: 35px;
   }
 }
 
 .page-header__promo-list--item:last-of-type {
   padding-right: 0;
-  padding-top: 41px;
+
+  @media (min-width: @middle-width) {
+    padding-right: 4px;
+  }
 }
 
 .page-header__promo-wrapper {
@@ -163,5 +181,6 @@
 
   @media (min-width: @middle-width) {
     width: 300px;
+    justify-content: start;
   }
 }

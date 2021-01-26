@@ -33,37 +33,52 @@
   }
 }
 
-.page-header__logo {
-  height: 23px;
-  padding: 23px 20px;
+.page-header__logo svg {
+  display: block;
   width: 74px;
   height: 23px;
 
   @media (min-width: @middle-width) {
-    height: 40px;
     width: 145px;
-    padding: 0;
-    padding: 27px 20px;
-    margin-bottom: 42px;
-
+    height: 40px;
   }
 
   @media (min-width: @large-width) {
-    height: 40px;
-    grid-column: 2 e("/") 3;
+    width: 147px;
   }
+}
+
+.page-header__logo {
+  display: block;
+  height: 23px;
+  padding: 23px 20px;
+
+  @media (min-width: @middle-width) {
+    padding: 10px;
+    margin-top: 17px;
+    margin-left: 9px;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: @large-width) {
+    min-width: 100%;
+    grid-column: 2 e("/") 3;
+    margin-left: 15px;
+  }
+}
+
+.page-header__logo:hover .page-header__logo-small,
+.page-header__logo:hover .page-header__logo-middle {
+  fill: @basic-pink;
+}
+
+.page-header__logo:active .page-header__logo-small,
+.page-header__logo:active .page-header__logo-middle {
+  fill: fade(@basic-white, 30%);
 }
 
 .page-header__logo-small {
   fill: @basic-white;
-
-  &:hover {
-    fill: @basic-pink;
-  }
-
-  &:active {
-    fill: fade(@basic-white, 30%);
-  }
 
   @media (min-width: @middle-width) {
     display: none;
@@ -75,15 +90,9 @@
 
   @media (min-width: @middle-width) {
     display: block;
+    width: 147px;
+    height: 40px;
     fill: @basic-white;
-
-    &:hover {
-      fill: @basic-pink;
-    }
-
-    &:active {
-      fill: fade(@basic-white, 30%);
-    }
   }
 
   @media (min-width: @large-width) {
@@ -105,16 +114,15 @@
 
 .page-header__logo-large--white {
   fill: @basic-white;
-
-  &:hover {
-    fill: @basic-pink;
-  }
-
-  &:active {
-    fill: fade(@basic-white, 30%);
-  }
 }
 
+.page-header__logo:hover .page-header__logo-large--white {
+  fill: @basic-pink;
+}
+
+.page-header__logo:active .page-header__logo-large--white {
+  fill: fade(@basic-white, 30%);
+}
 
 .page-header__wrapper-top {
   min-height: 70px;
@@ -163,7 +171,7 @@
 
 .page-header__toggle {
   position: absolute;
-  top: 21px;
+  top: 8px;
   right: 16px;
   z-index: 2;
   display: block;
@@ -172,9 +180,10 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
+  padding: 25px;
 
   @media (min-width: @middle-width) {
-    top: 40px;
+    top: 28px;
   }
 
   @media (min-width: @large-width) {

@@ -38,7 +38,6 @@
 
 
 .advantages__wrapper {
-  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -47,36 +46,12 @@
   background-color: @basic-white;
   justify-content: space-around;
 
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url('../img/bg-triangle-white.svg');
-    background-repeat: no-repeat;
-    width: 1200px;
-    height: 94px;
-    left: 0;
-    right: 0;
-    top: 150px;
-    z-index: 5;
-  }
-
   @media (min-width: @middle-width) {
     padding-top: 47px;
-
-    &::after {
-      top: 197px;
-    }
   }
 
   @media (min-width: @large-width) {
     padding-top: 62px;
-
-    &::after {
-      top: 240px;
-      background-size: 1931px 203px;
-      width: 1931px;
-      height: 203px;
-    }
   }
 }
 
@@ -85,6 +60,19 @@
   background-color: @silver-gray;
   width: 100%;
   overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url('../img/bg-triangle-white.svg');
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 94px;
+    left: 0;
+    right: 0;
+    top: -35px;
+    z-index: 5;
+  }
 
   &::after {
     content: "";
@@ -109,6 +97,18 @@
 
     &::after {
       display: none;
+    }
+
+    &::before {
+      top: 0;
+    }
+  }
+
+  @media (min-width: @large-width) {
+    &::before {
+      top: -27px;
+      background-size: 1931px 203px;
+      height: 203px;
     }
   }
 }
@@ -151,8 +151,8 @@
   @media (min-width: @large-width) {
     display: grid;
     position: relative;
-    grid-template-columns: 252px 252px 252px;
-    column-gap: 68px;
+    grid-template-columns: 249px 245px 249px;
+    column-gap: 73px;
     justify-content: center;
     text-align: center;
     padding-left: 0;

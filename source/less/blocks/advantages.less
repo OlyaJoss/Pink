@@ -66,11 +66,10 @@
     position: absolute;
     background-image: url('../img/bg-triangle-white.svg');
     background-repeat: no-repeat;
-    width: 1200px;
-    height: 94px;
+    background-size: cover;
+    height: 59px;
     left: 0;
     right: 0;
-    top: -35px;
     z-index: 5;
   }
 
@@ -100,15 +99,13 @@
     }
 
     &::before {
-      top: 0;
+      height: 81px;
     }
   }
 
   @media (min-width: @large-width) {
     &::before {
-      top: -27px;
-      background-size: 1931px 203px;
-      height: 203px;
+      height: 149px;
     }
   }
 }

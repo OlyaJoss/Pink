@@ -10,12 +10,11 @@
     position: absolute;
     background-image: url('../img/bg-triangle-white-footer.svg');
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 90px;
+    background-size: cover;
+    height: 32px;
     left: 0;
     right: 0;
-    top: 0;
+
     z-index: 5;
   }
 
@@ -23,7 +22,8 @@
     height: 362px;
 
     &::after {
-      top: -13px;
+      background-position: bottom center;
+      height: 56px;
     }
   }
 
@@ -31,7 +31,8 @@
     height: 520px;
 
     &::after {
-      height: 124px;
+      background-image: url('../img/triangle-white-footer.svg');
+      height: 121px;
     }
   }
 }

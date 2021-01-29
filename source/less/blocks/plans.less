@@ -16,22 +16,25 @@
     position: absolute;
     background-image: url('../img/bg-triangle-white.svg');
     background-repeat: no-repeat;
-    background-size: 1200px 124px;
-    height: 124px;
+    background-size: cover;
+    height: 59px;
     left: 0;
     right: 0;
-    top: -50px;
     z-index: 5;
   }
 
   @media (min-width: @middle-width) {
     padding-top: 108px;
-    padding-bottom: 70px;
+    padding-bottom: 48px;
   }
 
   @media (min-width: @large-width) {
     padding-top: 150px;
     padding-bottom: 140px;
+
+    &::after {
+      height: 109px;
+    }
   }
 }
 

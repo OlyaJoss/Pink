@@ -1,6 +1,7 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  font-family: @font-main;
   width: 100%;
   background-color: @dark-gray;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -33,6 +34,11 @@
   }
 }
 
+.page-header--catalog {
+  background-position: center;
+  background-size: cover;
+}
+
 .page-header__logo svg {
   display: block;
   width: 74px;
@@ -63,7 +69,7 @@
   @media (min-width: @large-width) {
     min-width: 100%;
     grid-column: 2 e("/") 3;
-    margin-left: 15px;
+    margin-left: 0;
   }
 }
 
@@ -248,3 +254,4 @@
   background-color: fade(@basic-pink, 30%);
   box-shadow: 0 8px 0 0 fade(@basic-pink, 30%), 0 16px 0 0 fade(@basic-pink, 30%);
 }
+

@@ -2,10 +2,6 @@
   position: relative;
   background-color: @basic-white;
   text-align: center;
-
-  @media (min-width: @large-width) {
-    padding-bottom: 30px;
-  }
 }
 
 .reviews__user-name-top {
@@ -20,6 +16,7 @@
 }
 
 .reviews__item {
+  position: relative;
   margin: 0;
   padding-top: 41px;
   padding-bottom: 23px;
@@ -34,43 +31,54 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url('../../img/icon-quotes.svg');
+      background-image: url('../img/icon-quotes.svg');
       background-repeat: no-repeat;
       background-size: contain;
       width: 79px;
       height: 63px;
-      left: 561px;
+      left: 50%;
       right: 0;
       top: 72px;
+      transform: translateX(-50%);
     }
   }
 }
 
-.reviews__arrows {
-  position: relative;
-  display: none;
-
-  @media (min-width: @large-width) {
-    display: block;
-  }
-}
-
-.reviews__arrows button {
+.reviews__arrow-left {
   padding: 0;
   border: none;
   color: inherit;
   background-color: transparent;
   cursor: pointer;
-}
 
-.reviews__arrow-left {
   &::before {
     content: "";
     position: absolute;
     background-image: url('../img/icon-review-arrow-left.svg');
     background-repeat: no-repeat;
-    top: 231px;
+    top: 213px;
     left: 0;
+    width: 22px;
+    height: 41px;
+  }
+}
+
+.reviews__arrow-right {
+  padding: 0;
+  border: none;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url('../img/icon-review-arrow-right.svg');
+    background-repeat: no-repeat;
+    top: 213px;
+    right: 0;
+    width: 22px;
+    height: 41px;
   }
 }
 

@@ -45,6 +45,7 @@
 }
 
 .reviews__arrow-left {
+  display: none;
   padding: 0;
   border: none;
   color: inherit;
@@ -61,9 +62,14 @@
     width: 22px;
     height: 41px;
   }
+
+  @media (min-width: @large-width) {
+    display: block;
+  }
 }
 
 .reviews__arrow-right {
+  display: none;
   padding: 0;
   border: none;
   color: inherit;
@@ -79,6 +85,10 @@
     right: 0;
     width: 22px;
     height: 41px;
+  }
+
+  @media (min-width: @large-width) {
+    display: block;
   }
 }
 

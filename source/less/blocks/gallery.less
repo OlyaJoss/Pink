@@ -4,21 +4,48 @@
   background-color: @basic-white;
 }
 
+.gallery__item {
+  background-color: @light-gray;
+}
+
+.gallery__item--small {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @middle-width) {
+    width: 300px;
+  }
+}
+
+.gallery__item-wrapper {
+  display: grid;
+  grid-template-columns: 280px;
+  gap: 20px;
+  justify-content: center;
+
+  @media (min-width: @middle-width) {
+    grid-template-columns: 300px 300px;
+  }
+
+  @media (min-width: @large-width) {
+    grid-template-columns: 300px 300px 300px;
+  }
+}
+
 .gallery__item-big {
   position: relative;
   margin-bottom: 20px;
+
+  @media (min-width: @middle-width) {
+    display: grid;
+    grid-column: 1 e("/") -1;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
-.gallery__description-wrapper {
-  position: relative;
-  display: block;
-  background-color: @light-gray;
+.gallery__description-wrapper--big {
   width: 280px;
-  padding-top: 26px;
-  padding-bottom: 26px;
-  padding-left: 17px;
-  padding-right: 10px;
-  margin: 0 auto;
 
   @media (min-width: @middle-width) {
     width: 620px;
@@ -26,30 +53,21 @@
 
   @media (min-width: @large-width) {
     width: 940px;
+    margin: 0;
   }
 }
 
-@media (min-width: @middle-width) {
-  .gallery__item--big {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    margin-bottom: 50px;
-  }
+.gallery__description-wrapper--big .gallery__item-description {
+  min-height: min-content;
 }
 
-.gallery__item-wrapper {
-  @media (min-width: @middle-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-
-  @media (min-width: @large-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-  }
+.gallery__description-wrapper {
+  background-color: @light-gray;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  padding-left: 17px;
+  padding-right: 10px;
+  margin: 0 auto;
 }
 
 .gallery__name {
@@ -67,33 +85,57 @@
   line-height: 30px;
   text-align: center;
   color: @basic-gray;
+
+  @media (min-width: @middle-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.gallery__slogan--bottom {
+  padding-top: 49px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+
+  @media (min-width: @middle-width) {
+    padding-top: 73px;
+    padding-bottom: 78px;
+  }
+
+  @media (min-width: @large-width) {
+    padding-top: 67px;
+    padding-bottom: 75px;
+  }
 }
 
 .gallery__slogan--top {
-text-align: center;
-margin: 0 auto;
-padding-top: 54px;
-padding-bottom: 60px;
+  margin: 0 auto;
+  padding-top: 54px;
+  padding-bottom: 60px;
+
+  @media (min-width: @middle-width) {
+    padding-top: 100px;
+    padding-bottom: 85px;
+  }
+
+  @media (min-width: @large-width) {
+    padding-bottom: 97px;
+  }
 }
 
-.gallery__item {
-  background-color: @light-gray;
-  margin-bottom: 20px;
-}
-
-.gallery__item--user-name {
+.gallery__user-name {
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
   color: @basic-gray;
   margin: 0;
-  order: 1;
 }
 
-.gallery__item--time {
+.gallery__time {
   font-weight: 300;
   font-size: 12px;
   line-height: 24px;
+  text-transform: uppercase;
   color: @basic-gray;
 }
 
@@ -113,19 +155,40 @@ padding-bottom: 60px;
   color: @basic-white;
 }
 
-.gallery__item--description {
+.gallery__item-description {
+  display: block;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: @basic-gray;
-  order: 2;
+
+  @media (min-width: @middle-width) {
+    min-height: 50px;
+  }
 }
 
 .gallery__likes {
+  display: flex;
+  align-items: center;
   font-weight: normal;
   font-size: 12px;
   line-height: 24px;
   color: @basic-pink;
+
+  @media (min-width: @middle-width) {
+    justify-content: space-between;
+  }
+}
+
+.gallery__likes-text {
+  order: 2;
+  margin-left: 15px;
+
+  @media (min-width: @middle-width) {
+    order: 1;
+    margin-left: 0;
+    margin-right: 10px;
+  }
 }
 
 .gallery__likes-button {
@@ -136,6 +199,12 @@ padding-bottom: 60px;
   color: inherit;
   background-color: transparent;
   cursor: pointer;
+  order: 1;
+
+  @media (min-width: @middle-width) {
+    order: 2;
+    padding-right: 30px;
+  }
 }
 
 .gallery__likes-button svg {

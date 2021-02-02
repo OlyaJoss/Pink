@@ -27,7 +27,7 @@
   }
 }
 
-.site-list__item {
+.site-list__link {
   position: relative;
   display: block;
   padding: 15px;
@@ -49,7 +49,6 @@
   @media (min-width: @large-width) {
     border-bottom: none;
     border-top: none;
-    margin-right: 49px;
 
     &:hover {
       color: @basic-pink;
@@ -77,3 +76,18 @@
     width: auto;
   }
 }
+
+.site-list__item {
+
+  @media (min-width: @large-width) {
+  margin-right: 46px;
+  }
+}
+
+.site-list__item:last-child {
+  @media (min-width: @large-width) {
+    margin-right: 0;
+  }
+}
+
+

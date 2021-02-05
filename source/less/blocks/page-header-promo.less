@@ -131,8 +131,21 @@
   line-height: 33px;
   font-weight: lighter;
   margin: 0 auto;
-  padding-top: 36px;
-  padding-bottom: 81px;
+  padding-top: 27px;
+  padding-bottom: 77px;
+
+  @media (min-width: @middle-width) {
+    font-size: 50px;
+    line-height: 68px;
+    padding-top: 65px;
+    padding-bottom: 128px;
+  }
+
+  @media (min-width: @large-width) {
+    width: 500px;
+    padding-top: 59px;
+    padding-bottom: 89px;
+  }
 }
 
 .page-header__promo-info {

@@ -29,11 +29,11 @@
   }
 
   @media (min-width: @large-width) {
-    padding-top: 150px;
-    padding-bottom: 140px;
+    padding-top: 189px;
+    padding-bottom: 96px;
 
     &::after {
-      height: 109px;
+      height: 120px;
     }
   }
 }
@@ -41,7 +41,6 @@
 .plans__big-table {
   width: 100%;
   border-collapse: collapse;
-  transform: translate(-535px);
 
   @media (min-width: @middle-width) {
     transform: translate(0px);
@@ -69,13 +68,15 @@
   }
 
   @media (min-width: @large-width) {
-    min-width: 233px;
+    width: 235px;
     font-size: 18px;
     line-height: 30px;
+    padding-top: 15px;
+    padding-bottom: 18px;
   }
 }
 
-.plans__header--price {
+.plans__price {
   font-size: 18px;
   line-height: 30px;
   font-weight: 300;
@@ -104,7 +105,7 @@
   }
 }
 
-.plans__header--hit-word {
+.plans__hit-word {
   content: "";
   position: absolute;
   font-size: 14px;
@@ -127,21 +128,10 @@
   }
 
   @media (min-width: @large-width) {
-    min-width: 234px;
-  }
-}
-
-.plans__tariff div {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: start;
-  text-align: start;
-  width: 276px;
-
-  @media (min-width: @middle-width) {
-    display: block;
-    width: 137px;
+    font-size: 18px;
+    padding-left: 21px;
+    padding-top: 14px;
+    padding-bottom: 15px;
   }
 }
 
@@ -150,7 +140,7 @@
   padding-left: 19px;
 }
 
-.plans__tariff--base span {
+.plans__base span {
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
@@ -161,7 +151,19 @@
   }
 }
 
-.plans__tariff--standart span {
+
+.plans__base,
+.plans__standart,
+.plans__unlimited {
+  border: 2px solid @light-gray;
+
+  @media (min-width: @large-width) {
+    padding-top: 5px;
+    padding-left: 104px;
+  }
+}
+
+.plans__standart span {
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
@@ -174,7 +176,7 @@
   }
 }
 
-.plans__tariff--unlimited span {
+.plans__unlimited span {
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
@@ -185,22 +187,16 @@
   }
 }
 
-.plans__tariff--svg-no {
+.plans__svg-no {
   width: 27px;
   height: 27px;
-  border: none;
-  padding: 0;
   fill: @basic-orange;
-  padding: 19px;
 }
 
-.plans__tariff--svg-yes {
+.plans__svg-yes {
   width: 31px;
   height: 21px;
-  border: none;
-  padding: 0;
   fill: @basic-green;
-  padding-right: 17px;
 }
 
 .plans__bullit-list {

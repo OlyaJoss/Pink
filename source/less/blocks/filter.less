@@ -14,16 +14,18 @@
     display: grid;
     grid-template-columns: 300px 300px;
     margin-top: 57px;
-    margin-bottom: 54px;
+    margin-bottom: 49px;
     gap: 10px;
   }
+
   @media (min-width: @large-width) {
     grid-template-columns: 300px 410px;
     justify-content: center;
     gap: 70px;
     background-color: @light-gray;
     padding-top: 57px;
-    padding-bottom: 57px;
+    padding-bottom: 52px;
+    margin-bottom: 0;
   }
 }
 
@@ -33,42 +35,79 @@
 }
 
 .filter__tools-wrapper {
+  position: relative;
   display: grid;
+
 }
 
 .filter__tools {
   display: flex;
   flex-direction: row;
   list-style: none;
-  justify-content: center;
-  align-items: center;
   padding: 0;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin-top: 35px;
+  margin-bottom: 107px;
+  margin-left: 35px;
 
   @media (min-width: @middle-width) {
     flex-direction: column;
+    margin-top: 9px;
+    margin-left: 39px;
+    margin-bottom: 73px;
+  }
+
+  @media (min-width: @large-width) {
     margin-top: 0;
+    margin-left: 19px;
+    margin-bottom: 156px;
   }
 }
 
 .filter__tools li {
-  margin-right: 35px;
+  margin-right: 34px;
+
+  @media (min-width: @middle-width) {
+    margin-right: 0;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: @large-width) {
+    margin-bottom: 26px;
+  }
+}
+
+.filter__tools li:nth-child(2) {
+  @media (min-width: @middle-width) {
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: @large-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .filter__tools li:last-child {
   margin-right: 0;
-}
+  margin-top: 8px;
 
-.filter__scale-list {
-  padding: 0;
-  margin: 0;
+  @media (min-width: @middle-width) {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3px;
+  }
+
+  @media (min-width: @large-width) {
+    margin-left: 7px;
+  }
 }
 
 .filter__scale {
   display: none;
-  position: relative;
+  position: absolute;
+  bottom: 165px;
   width: 240px;
+  left: 20px;
   height: 2px;
   background-color: @basic-gray;
   padding: 0;
@@ -77,6 +116,31 @@
 
   @media (min-width: @middle-width) {
     display: block;
+    left: 90px;
+    width: 202px;
+  }
+
+  @media (min-width: @large-width) {
+    width: 288px;
+    left: 112px;
+  }
+}
+
+.filter__scale--crop {
+  @media (min-width: @middle-width) {
+    bottom: 354px;
+  }
+}
+
+.filter__scale--fill {
+  @media (min-width: @middle-width) {
+    bottom: 281px;
+  }
+}
+
+.filter__scale--contrast {
+  @media (min-width: @middle-width) {
+    bottom: 211px;
   }
 }
 
@@ -87,6 +151,7 @@
 .filter__button-scale {
   position: absolute;
   top: 50%;
+  left: 80%;
   transform: translateY(-50%);
   width: 14px;
   height: 14px;
@@ -96,6 +161,31 @@
   padding: 0;
   cursor: pointer;
 }
+
+.filter__scale--crop .filter__button-scale {
+  left: 73%;
+
+  @media (min-width: @large-width) {
+    left: 24%;
+  }
+}
+
+.filter__scale--fill .filter__button-scale {
+  left: 13%;
+
+  @media (min-width: @large-width) {
+    left: 86%;
+  }
+}
+
+.filter__scale--contrast .filter__button-scale {
+  left: 48%;
+
+  @media (min-width: @large-width) {
+    left: 56%;
+  }
+}
+
 
 .filter__button-scale:active {
   background-color: @basic-pink;
@@ -108,8 +198,8 @@
   font-weight: 700;
   text-align: center;
   width: 280px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 15px;
+  padding-bottom: 16px;
   margin: 0 auto;
   background-color: transparent;
   border-radius: 30px;
@@ -117,6 +207,7 @@
   @media (min-width: @middle-width) {
     width: 260px;
   }
+
   @media (min-width: @large-width) {
     width: 183px;
   }
@@ -125,14 +216,16 @@
 .filter__button--load {
   color: @basic-pink;
   border: 3px solid @basic-pink;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 
   @media (min-width: @large-width) {
+    margin: 0;
     margin-bottom: 24px;
   }
+
   @media (min-width: @large-width) {
     margin-bottom: 0;
-    margin-right: 40px;
+    margin-right: 47px;
     padding-left: 42px;
     padding-right: 42px;
   }
@@ -144,12 +237,11 @@
     padding-left: 55px;
     padding-right: 55px;
   }
-
 }
 
 .filter__button--load:hover {
-color: @basic-white;
-background-color: @basic-pink;
+  color: @basic-white;
+  background-color: @basic-pink;
 }
 
 .filter__button--load:active {
@@ -172,12 +264,48 @@ background-color: @basic-pink;
   border: 3px solid fade(@basic-gray, 30%);
 }
 
-.filter__tools button {
+.filter__icon {
   padding: 0;
   border: none;
   color: inherit;
   background-color: transparent;
   cursor: pointer;
+}
+
+.filter__icon--crop svg {
+  @media (min-width: @middle-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: @large-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.filter__icon--fill svg {
+  @media (min-width: @middle-width) {
+    width: 24px;
+    height: 22px;
+  }
+
+  @media (min-width: @large-width) {
+    width: 48px;
+    height: 43px;
+  }
+}
+
+.filter__icon--contrast svg {
+  @media (min-width: @middle-width) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (min-width: @large-width) {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .filter__icon-color {
@@ -200,9 +328,13 @@ background-color: @basic-pink;
   display: flex;
   flex-direction: column;
 
+  @media (min-width: @middle-width) {
+    margin-left: 34px;
+  }
+
   @media (min-width: @large-width) {
     flex-direction: row;
     justify-content: start;
-    margin-top: 70px;
+    margin-left: 17px;
   }
 }

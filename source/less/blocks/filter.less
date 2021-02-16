@@ -36,8 +36,6 @@
 
 .filter__tools-wrapper {
   position: relative;
-  display: grid;
-
 }
 
 .filter__tools {
@@ -53,7 +51,7 @@
     flex-direction: column;
     margin-top: 9px;
     margin-left: 39px;
-    margin-bottom: 73px;
+    margin-bottom: 90px;
   }
 
   @media (min-width: @large-width) {
@@ -163,7 +161,10 @@
 }
 
 .filter__scale--crop .filter__button-scale {
-  left: 73%;
+
+  @media (min-width: @middle-width) {
+    left: 73%;
+  }
 
   @media (min-width: @large-width) {
     left: 24%;
@@ -218,13 +219,14 @@
   border: 3px solid @basic-pink;
   margin-bottom: 12px;
 
-  @media (min-width: @large-width) {
+  @media (min-width: @middle-width) {
     margin: 0;
     margin-bottom: 24px;
   }
 
   @media (min-width: @large-width) {
     margin-bottom: 0;
+    margin-top: 5px;
     margin-right: 47px;
     padding-left: 42px;
     padding-right: 42px;
@@ -236,6 +238,7 @@
   @media (min-width: @large-width) {
     padding-left: 55px;
     padding-right: 55px;
+    margin-top: 5px;
   }
 }
 

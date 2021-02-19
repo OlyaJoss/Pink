@@ -35,8 +35,18 @@
 }
 
 .page-header--catalog {
-  background-position: center 12px;
-  background-size: 266%;
+  background-position: center 259px;
+  background-size: 100%;
+
+  @media (min-width: @middle-width) {
+    background-position: center 253px;
+    background-size: 183%;
+  }
+
+  @media (min-width: @large-width) {
+    background-position: center 1px;
+    background-size: 266%;
+  }
 }
 
 .page-header__logo svg {

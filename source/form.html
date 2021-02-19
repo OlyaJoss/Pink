@@ -116,7 +116,8 @@
       <p class="form__promo">
         Поделитесь своей историей и получите<br class="form__promo-br">
         шанс выиграть ценный приз — 1000<br class="form__promo-br">
-        миль на<br class="form__promo-br-desktop"> вашу бонусную карту!<span class="form__promo-extra-text">Пожалуйста, заполните форму ниже:</span>
+        миль на<br class="form__promo-br-desktop"> вашу бонусную карту! <span class="form__promo-extra-text">Пожалуйста,
+          заполните форму ниже:</span>
       </p>
 
       <form class="form__wrapper" method="post" action="http://echo.htmlacademy.ru">
@@ -143,33 +144,39 @@
           <h3 class="form__achievements-title">Ваши безбашенные достижения в путешествии</h3>
           <div class="form__achievements-wrapper">
             <p class="form__item">
-              <input class="form__checkbox visually-hidden" type="checkbox" name="remember" value="text" checked>
-              <label class="form__checkbox-label">
+              <input class="form__checkbox visually-hidden" id="ckeckbox-1" type="checkbox" name="remember" value="text"
+                checked>
+              <label class="form__checkbox-label" for="ckeckbox-1">
                 Сделал селфи с акулой</label>
             </p>
             <p class="form__item">
-              <input class="form__checkbox visually-hidden" id="ckeckbox-1" type="checkbox" name="remember" value="text" checked>
-              <label class="form__checkbox-label" for="ckeckbox-1">
+              <input class="form__checkbox visually-hidden" id="ckeckbox-2" type="checkbox" name="remember" value="text"
+                checked>
+              <label class="form__checkbox-label" for="ckeckbox-2">
                 Обгорел на пляже</label>
             </p>
             <p class="form__item">
-              <input class="form__checkbox visually-hidden" id="ckeckbox-2" type="checkbox" name="remember" value="text">
-              <label class="form__checkbox-label" for="ckeckbox-2">
+              <input class="form__checkbox visually-hidden" id="ckeckbox-3" type="checkbox" name="remember"
+                value="text">
+              <label class="form__checkbox-label" for="ckeckbox-3">
                 Видел Чака Норриса</label>
             </p>
             <p class="form__item">
-              <input class="form__checkbox visually-hidden" id="ckeckbox-3" type="checkbox" name="remember" value="text">
-              <label class="form__checkbox-label" for="ckeckbox-3">
+              <input class="form__checkbox visually-hidden" id="ckeckbox-4" type="checkbox" name="remember"
+                value="text">
+              <label class="form__checkbox-label" for="ckeckbox-4">
                 Накупил сувениров</label>
             </p>
             <p class="form__item">
-              <input class="form__checkbox visually-hidden" id="ckeckbox-4" type="checkbox" name="remember" value="text" checked>
-              <label class="form__checkbox-label" for="ckeckbox-4">
+              <input class="form__checkbox visually-hidden" id="ckeckbox-5" type="checkbox" name="remember" value="text"
+                checked>
+              <label class="form__checkbox-label" for="ckeckbox-5">
                 Удержал башню</label>
             </p>
             <p class="form__item">
-              <input class="form__checkbox visually-hidden" id="ckeckbox-5" type="checkbox" name="remember" value="text">
-              <label class="form__checkbox-label" for="ckeckbox-5">
+              <input class="form__checkbox visually-hidden" id="ckeckbox-6" type="checkbox" name="remember"
+                value="text">
+              <label class="form__checkbox-label" for="ckeckbox-6">
                 Разгромил отель</label>
             </p>
           </div>
@@ -192,15 +199,18 @@
         <div class="form__apps">
           <h3 class="form__apps-title">С каким приложением путешествовали?</h3>
           <p class="form__apps-item">
-            <input class="form__radio visually-hidden" type="radio" id="iOS" name="pink-app" value="pink-for-iOS" checked>
+            <input class="form__radio visually-hidden" type="radio" id="iOS" name="pink-app" value="pink-for-iOS"
+              checked>
             <label class="form__radio-label" for="iOS">Pink для iOS</label>
           </p>
           <p class="form__apps-item">
-            <input class="form__radio visually-hidden" type="radio" id="Android" name="pink-app" value="pink-for-Android">
+            <input class="form__radio visually-hidden" type="radio" id="Android" name="pink-app"
+              value="pink-for-Android">
             <label class="form__radio-label" for="Android">Pink на Android</label>
           </p>
           <p class="form__apps-item">
-            <input class="form__radio visually-hidden" type="radio" id="Windows" name="pink-app" value="pink-for-Windows">
+            <input class="form__radio visually-hidden" type="radio" id="Windows" name="pink-app"
+              value="pink-for-Windows">
             <label class="form__radio-label" for="Windows">Windows Phone</label>
           </p>
         </div>
@@ -224,7 +234,7 @@
 
   <footer class="page-footer container">
     <div class="page-footer">
-      <div class="page-footer__logo">
+      <div class="page-footer__logo page-footer__logo--form">
         <a class="page-footer__logo-link">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375"
@@ -274,7 +284,7 @@
         </a>
       </div>
       <div class="page-footer__social social">
-        <ul class="social__list">
+        <ul class="social__list social__list--form">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -307,7 +317,7 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
+      <div class="page-footer__copyright copyright copyright--form">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

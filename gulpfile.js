@@ -16,9 +16,9 @@ const html = require("gulp-html");
 // Html task
 
 const buildHtml = () => {
-return gulp.src('source/*.html')
-.pipe(html())
-.pipe(gulp.dest('build'));
+  return gulp.src('source/*.html')
+    .pipe(html())
+    .pipe(gulp.dest('build'));
 };
 
 exports.html = buildHtml;

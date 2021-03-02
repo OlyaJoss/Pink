@@ -12,16 +12,20 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del"); //---- ????-----
 const html = require("gulp-html");
+const htmlmin = require("gulp-htmlmin");
 
 // Html task
 
 const buildHtml = () => {
   return gulp.src('source/*.html')
-    .pipe(html())
-    .pipe(gulp.dest('build'));
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
+    .pipe(gulp.dest('build'))
+    .pipe(sync.stream());
 };
 
-exports.html = buildHtml;
+exports.buildHtml = html;
 
 // Styles
 

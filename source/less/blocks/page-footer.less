@@ -1,23 +1,119 @@
 .page-footer {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: @font-main;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   color: @basic-gray;
   background-color: @basic-white;
+  margin: 0 auto;
 
   @media (min-width: @middle-width) {
+    width: 660px;
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
+    justify-content: left;
+  }
+
+  @media (min-width: @large-width) {
+    width: 960px;
+    padding-top: 14px;
   }
 }
 
-.social__link {
-  color: @basic-pink;
-  text-decoration: none;
+.page-footer__logo {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 33px;
+
+  @media (min-width: @middle-width) {
+    width: 147px;
+    margin: 36px auto;
+    margin-right: 75px;
+    margin-left: 19px;
+    padding: 0;
+  }
+
+  @media (min-width: @large-width) {
+    width: 147px;
+    margin: 70px auto;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 238px;
+  }
 }
 
-.copyright__link {
-  color: @basic-pink;
-  text-decoration: none;
+.page-footer__logo--form {
+  margin-top: 40px;
+
+  @media (min-width: @large-width) {
+    margin-top: 32px;
+  }
+}
+
+.page-footer__logo-link:hover .page-footer__logo-small-medium-svg {
+  fill: @basic-pink;
+}
+
+.page-footer__logo-link:active .page-footer__logo-small-medium-svg {
+  opacity: 0.3;
+}
+
+.page-footer__logo-small-medium-svg {
+  display: block;
+
+  @media (min-width: @large-width) {
+    display: none;
+  }
+}
+
+.page-footer__logo-small-medium-svg--gray {
+  fill: @basic-gray;
+}
+
+.page-footer__logo-large {
+  display: none;
+
+  @media (min-width: @large-width) {
+    display: block;
+  }
+}
+
+.page-footer__logo-large--pink {
+  fill: @basic-pink;
+}
+
+.page-footer__logo-large--gray {
+  fill: @basic-gray;
+}
+
+.page-footer__logo-link:hover .page-footer__logo-large--gray {
+  fill: @basic-pink;
+}
+
+.page-footer__logo-link:active .page-footer__logo-large--gray {
+  fill: fade(@basic-white, 30%);
+}
+
+.page-footer__social {
+  @media (min-width: @middle-width) {
+    width: 175px;
+    margin-right: 74px;
+  }
+
+  @media (min-width: @large-width) {
+    margin-right: 193px;
+  }
+}
+
+.page-footer__social--form {
+  @media (min-width: @large-width) {
+    margin-top: 20px;
+  }
+}
+
+.page-footer__copyright {
+  @media (min-width: @large-width) {
+    width: 130px;
+  }
 }

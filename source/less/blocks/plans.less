@@ -1,19 +1,243 @@
 .plans {
   margin: 0 auto;
-  background-color: @light-gray;
+  min-height: 279px;
 }
 
-@media (max-width: @small-width) {
-  .plans--wrapper {
-    margin: 0 auto;
-    overflow: hidden;
+.plans--wrapper {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: @silver-gray;
+  padding-top: 134px;
+  padding-bottom: 58px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url('../img/bg-triangle-white.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 59px;
+    left: 0;
+    right: 0;
+    z-index: 5;
   }
 
-  .plans__price--base {
-    display: none;
+  @media (min-width: @middle-width) {
+    padding-top: 108px;
+    padding-bottom: 48px;
   }
 
-  .plans__price--unlimited {
+  @media (min-width: @large-width) {
+    padding-top: 189px;
+    padding-bottom: 96px;
+
+    &::after {
+      height: 120px;
+    }
+  }
+}
+
+.plans__big-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  @media (min-width: @middle-width) {
+    transform: translate(0px);
+  }
+}
+
+.plans__header {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  width: 278px;
+  text-transform: uppercase;
+  color: @basic-white;
+  text-align: center;
+  background-color: @dark-gray;
+  border: 2px solid @silver-gray;
+  border-top: 2px solid @silver-gray;
+  border-bottom: 2px solid @dark-gray;
+  padding-top: 15px;
+  padding-bottom: 27px;
+
+  @media (min-width: @middle-width) {
+    width: 153px;
+    padding-bottom: 8px;
+  }
+
+  @media (min-width: @large-width) {
+    width: 235px;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 15px;
+    padding-bottom: 18px;
+  }
+}
+
+.plans__price {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  background-color: transparent;
+  border: none;
+
+  @media (min-width: @large-width) {
+    font-size: 24px;
+  }
+}
+
+.plans__header--hit {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url('../img/bg-hit.svg');
+    background-repeat: no-repeat;
+    width: 74px;
+    height: 74px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+  }
+}
+
+.plans__hit-word {
+  content: "";
+  position: absolute;
+  font-size: 14px;
+  font-weight: lighter;
+  background-color: transparent;
+  border: none;
+  z-index: 10;
+  transform: translateX(208px) translateY(17px) rotate(-45deg);
+}
+
+
+.plans__tariff {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  border: 2px solid @light-gray;
+
+  @media (min-width: @middle-width) {
+    padding-left: 15px;
+  }
+
+  @media (min-width: @large-width) {
+    font-size: 18px;
+    padding-left: 21px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+  }
+}
+
+.plans__tariff span {
+  padding-top: 13px;
+  padding-left: 19px;
+}
+
+.plans__base span {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @media (min-width: @middle-width) {
     display: none;
   }
+}
+
+
+.plans__base,
+.plans__standart,
+.plans__unlimited {
+  border: 2px solid @light-gray;
+
+  @media (min-width: @large-width) {
+    padding-top: 5px;
+    padding-left: 104px;
+  }
+}
+
+.plans__standart span {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: left;
+
+
+  @media (min-width: @middle-width) {
+    display: none;
+  }
+}
+
+.plans__unlimited span {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @media (min-width: @middle-width) {
+    display: none;
+  }
+}
+
+.plans__svg-no {
+  width: 27px;
+  height: 27px;
+  fill: @basic-orange;
+}
+
+.plans__svg-yes {
+  width: 31px;
+  height: 21px;
+  fill: @basic-green;
+}
+
+.plans__bullit-list {
+  display: flex;
+  list-style: none;
+  z-index: 30;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 30px;
+  margin-top: 27px;
+
+  @media (min-width: @middle-width) {
+    display: none;
+  }
+}
+
+.plans__bullit-circle {
+  background-color: @dark-gray;
+  border: 3px solid @basic-white;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  opacity: 0.3;
+
+}
+
+.plans__bullit-item {
+  margin-right: 13px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.plans__bullit-circle--active {
+  background-color: @basic-white;
+  border: 3px solid @dark-gray;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  padding: 0;
 }

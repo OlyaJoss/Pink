@@ -158,6 +158,11 @@
   }
 }
 
+.page-header__wrapper-top--closed {
+  min-height: 67px;
+  border-bottom: none;
+}
+
 .page-header__wrapper {
   position: relative;
   width: 100%;
@@ -187,8 +192,9 @@
 
 .page-header__toggle {
   position: absolute;
-  top: 8px;
-  right: 16px;
+  top: 6px;
+  right: 23px;
+
   z-index: 2;
   display: block;
   width: 23px;
@@ -208,6 +214,8 @@
 }
 
 .page-header__toggle--opened {
+  top: 8px;
+  right: 16px;
   position: absolute;
   z-index: 2;
   background-color: transparent;
@@ -248,19 +256,20 @@
   content: "";
   position: absolute;
   top: 15px;
-  left: 17px;
-  width: 36px;
-  height: 2px;
+  left: 3px;
+  width: 50px;
+  height: 4px;
+  border-radius: 1px;
   background-color: @basic-white;
-  box-shadow: 0 8px 0 0 @basic-white, 0 16px 0 0 @basic-white;
+  box-shadow: 0 10px 0 0 @basic-white, 0 20px 0 0 @basic-white;
 }
 
 .page-header__toggle--closed:hover::before {
   background-color: @basic-pink;
-  box-shadow: 0 8px 0 0 @basic-pink, 0 16px 0 0 @basic-pink;
+  box-shadow: 0 10px 0 0 @basic-pink, 0 20px 0 0 @basic-pink;
 }
 
 .page-header__toggle--closed:active::before {
   background-color: fade(@basic-pink, 30%);
-  box-shadow: 0 8px 0 0 fade(@basic-pink, 30%), 0 16px 0 0 fade(@basic-pink, 30%);
+  box-shadow: 0 10px 0 0 fade(@basic-pink, 30%), 0 20px 0 0 fade(@basic-pink, 30%);
 }

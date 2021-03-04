@@ -34,7 +34,7 @@
     font-size: 30px;
     line-height: 40px;
     margin: 0 auto;
-    padding-top: 49px;
+    padding-top: 42px;
   }
 }
 
@@ -53,11 +53,13 @@
     font-size: 18px;
     line-height: 24px;
     padding-bottom: 35px;
-    width: 378px;
+    padding-top: 21px;
+    width: 322px;
   }
 
   @media (min-width: @large-width) {
-    padding-bottom: 44px;
+    padding-bottom: 63px;
+    width: 360px;
   }
 }
 
@@ -81,6 +83,10 @@
   @media (min-width: @middle-width) {
     padding: 15px 135px;
   }
+
+  @media (min-width: @large-width) {
+    margin-bottom: 0;
+  }
 }
 
 .fail-pop-up__br {
@@ -92,5 +98,15 @@
 
   @media (min-width: @large-width) {
     display: none;
+  }
+}
+
+.fail-pop-up__button-wrapper {
+  background-color: @basic-white;
+
+  @media (min-width: @large-width) {
+    background-color: @silver-gray;
+    padding-top: 50px;
+    padding-bottom: 49px;
   }
 }

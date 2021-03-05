@@ -16,8 +16,8 @@
 
   @media (min-width: @middle-width) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-size: cover;
-    background-position: center 0;
+    background-size: 182%;
+    background-position: center 254px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -26,7 +26,8 @@
 
   @media (min-width: @large-width) {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center 9px;
+    background-position: center 3px;
+    background-size: 266%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -49,6 +50,18 @@
   }
 }
 
+.page-header--catalog-opened {
+  background-position: center 0;
+
+  @media (min-width: @middle-width) {
+    background-size: 183%;
+  }
+
+  @media (min-width: @large-width) {
+    background-size: 266%;
+  }
+}
+
 .page-header__logo svg {
   display: block;
   width: 74px;
@@ -67,7 +80,8 @@
 .page-header__logo {
   display: block;
   height: 23px;
-  padding: 23px 20px;
+  padding: 22px 20px;
+  margin-bottom: 22px;
 
   @media (min-width: @middle-width) {
     padding: 10px;
@@ -141,11 +155,10 @@
 }
 
 .page-header__wrapper-top {
-  min-height: 70px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 1px solid @basic-black;
+  min-height: 67px;
 
   @media (min-width: @middle-width) {
     min-height: 110px;
@@ -158,9 +171,13 @@
   }
 }
 
-.page-header__wrapper-top--closed {
-  min-height: 67px;
-  border-bottom: none;
+.page-header__wrapper-top--opened {
+  border-bottom: 1px solid @basic-black;
+  min-height: 70px;
+
+  @media (min-width: @middle-width) {
+    min-height: 110px;
+  }
 }
 
 .page-header__wrapper {
@@ -214,13 +231,17 @@
 }
 
 .page-header__toggle--opened {
-  top: 28px;
+  top: 8px;
   right: 16px;
   position: absolute;
   z-index: 2;
   background-color: transparent;
   cursor: pointer;
   border: none;
+
+  @media (min-width: @middle-width) {
+    top: 28px;
+  }
 
   &::before,
   &::after {

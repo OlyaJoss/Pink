@@ -2,6 +2,7 @@ let navigationButton = document.querySelector('.page-header__toggle');
 let navigationMenu = document.querySelector('.main-nav');
 let navigationBackground = document.querySelector('.page-header__wrapper');
 
+
 let clickButtonHandler = function () {
 
   navigationButton.classList.toggle('page-header__toggle--opened');

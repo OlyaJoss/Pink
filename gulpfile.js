@@ -5,12 +5,12 @@ const less = require("gulp-less");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
-const csso = require("gulp-csso"); // ----
-const rename = require("gulp-rename"); //----
+const csso = require("gulp-csso");
+const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
-const del = require("del"); //---- ????-----
+const del = require("del");
 const html = require("gulp-html");
 const htmlmin = require("gulp-htmlmin");
 
@@ -25,7 +25,7 @@ const buildHtml = () => {
     .pipe(sync.stream());
 };
 
-exports.buildHtml = html;
+exports.buildHtml = buildHtml;
 
 // Styles
 
@@ -45,6 +45,15 @@ const styles = () => {
 };
 
 exports.styles = styles;
+
+
+const scripts = () => {
+  return gulp.src("source/js/*.js")
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+}
+
+exports.scripts = scripts;
 
 // Server
 
@@ -67,7 +76,6 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
   gulp.watch("source/*.html", gulp.series("buildHtml")).on("change", sync.reload);
-  gulp.watch("build/*.html", gulp.series("buildHtml")).on("change", sync.reload);
 };
 
 exports.default = gulp.series(
@@ -96,7 +104,7 @@ const createWebp = () => {
     .pipe(webp({
       quality: 90
     }))
-    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("build/img"))
 };
 
 exports.webp = createWebp;
@@ -140,7 +148,21 @@ const build = gulp.series(
   clean,
   copy,
   styles,
+  scripts,
   sprite,
+  createWebp,
   buildHtml,
 );
 exports.build = build;
+
+exports.default = gulp.series(
+  clean,
+  copy,
+  styles,
+  scripts,
+  sprite,
+  createWebp,
+  buildHtml,
+  server,
+  watcher
+);

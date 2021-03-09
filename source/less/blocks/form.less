@@ -6,7 +6,7 @@
 .form__wrapper {
   display: grid;
   justify-content: center;
-  grid-template-columns: 280px;
+  grid-template-columns: 1fr 280px 1fr;
 
   @media (min-width: @middle-width) {
     display: grid;
@@ -75,8 +75,8 @@
     line-height: 30px;
     padding-top: 91px;
     padding-bottom: 72px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 83px;
+    padding-right: 83px;
   }
 
   @media (min-width: @large-width) {
@@ -110,9 +110,11 @@
 
 .form__full-name {
   padding-bottom: 25px;
+  grid-column: 2 e("/") 3;
 
   @media (min-width: @middle-width) {
     padding-bottom: 0;
+    grid-column: 1 e("/") -1;
   }
 }
 
@@ -171,7 +173,7 @@
     background-color: @basic-white;
     text-transform: uppercase;
     margin: 0 auto;
-    margin-top: 59px;
+    margin-top: 82px;
     margin-bottom: 35px;
     grid-column: 1 e("/") 3;
     grid-row: 1 e("/") 2;
@@ -189,10 +191,16 @@
 .form__apps {
   position: relative;
   padding-top: 39px;
+  grid-column: 1 e("/") 4;
+  display: grid;
+  grid-template-columns: 1fr 280px 1fr;
+  background-color: @silver-gray;
 
   @media (min-width: @middle-width) {
+    grid-column: 1 e("/") -1;
     padding-top: 7px;
     padding-bottom: 15px;
+    background-color: @basic-white;
   }
 }
 
@@ -220,15 +228,22 @@
 
 .form__apps-item {
   margin-bottom: 45px;
+  grid-column: 2 e("/") 3;
+
 
   @media (min-width: @middle-width) {
     margin-top: 23px;
     margin-left: 58px;
+    margin-bottom: 22px;
+    grid-column: 1 e("/") -1;
   }
 
   @media (min-width: @large-width) {
-    margin-top: 24px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
     margin-left: 109px;
+
   }
 }
 
@@ -242,22 +257,30 @@
   text-transform: uppercase;
   margin: 0 auto;
   padding-bottom: 25px;
+  grid-column: 2 e("/") 3;
 
   @media (min-width: @middle-width) {
     position: relative;
     width: 368px;
     background-color: @basic-white;
     z-index: 10;
+    grid-column: 1 e("/") -1;
   }
 
   @media (min-width: @large-width) {
     padding-top: 30px;
     padding-left: 36px;
+    padding-bottom: 0;
   }
 }
 
 .form__emotions {
   position: relative;
+  grid-column: 2 e("/") 3;
+
+  @media (min-width: @middle-width) {
+    grid-column: 1 e("/") -1;
+  }
 
   @media (min-width: @large-width) {
 
@@ -321,6 +344,7 @@
   margin: 0 auto;
   padding-top: 39px;
   padding-bottom: 24px;
+  grid-column: 2 e("/") 3;
 
   @media (min-width: @middle-width) {
     position: relative;
@@ -329,6 +353,7 @@
     width: 436px;
     z-index: 5;
     background-color: @basic-white;
+    grid-column: 1 e("/") -1;
   }
 }
 
@@ -460,12 +485,15 @@
 .form__contacts {
   position: relative;
   padding-bottom: 41px;
+  grid-column: 2 e("/") 3;
 
   @media (min-width: @middle-width) {
+    grid-column: 1 e("/") -1;
+
     &::before {
       content: "";
       position: absolute;
-      top: 66px;
+      top: 89px;
       left: 0;
       width: 618px;
       height: 310px;
@@ -507,6 +535,7 @@
     margin-left: 58px;
     margin-right: 58px;
     padding-right: 79px;
+    width: 499px;
   }
 
   @media (min-width: @large-width) {
@@ -532,11 +561,15 @@
   background-color: @silver-gray;
   width: 100%;
   padding: 0 calc(50% - 50vw);
+  grid-column: 1 e("/") 4;
+  display: grid;
+  grid-template-columns: 1fr 280px 1fr;
 
   @media (min-width: @middle-width) {
     background-color: @basic-white;
     margin: 0 auto;
     padding-left: 0;
+    grid-column: 1 e("/") -1;
 
     &::before {
       content: "";
@@ -577,9 +610,11 @@
 
 .form__achievements-wrapper {
   padding-bottom: 13px;
+  grid-column: 2 e("/") 3;
 
   @media (min-width: @middle-width) {
     padding-bottom: 25px;
+    grid-column: 1 e("/") -1;
   }
 
   @media (min-width: @large-width) {
@@ -622,11 +657,13 @@
 }
 
 .form__button {
+  grid-column: 2 e("/") 3;
 
   @media (min-width: @middle-width) {
     display: flex;
     justify-content: space-between;
     margin-bottom: 49px;
+    grid-column: 1 e("/") -1;
   }
 
   @media (min-width: @large-width) {
@@ -757,4 +794,3 @@
   top: 13px;
   left: 13px;
 }
-

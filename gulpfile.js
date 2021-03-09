@@ -107,7 +107,7 @@ const createWebp = () => {
     .pipe(gulp.dest("build/img"))
 };
 
-exports.webp = createWebp;
+exports.createWebp = createWebp;
 
 // Sprite
 

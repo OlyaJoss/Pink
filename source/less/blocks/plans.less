@@ -113,7 +113,10 @@
   background-color: transparent;
   border: none;
   z-index: 10;
-  transform: translateX(208px) translateY(17px) rotate(-45deg);
+
+  @media (min-width: @large-width) {
+  transform: translateX(-53px) translateY(-1px) rotate(-45deg);
+}
 }
 
 

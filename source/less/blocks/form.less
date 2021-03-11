@@ -191,16 +191,22 @@
 .form__apps {
   position: relative;
   padding-top: 39px;
+  padding-bottom: 14px;
   grid-column: 1 e("/") 4;
   display: grid;
   grid-template-columns: 1fr 280px 1fr;
+  grid-template-rows: minmax(60px, max-content) minmax(75px, max-content) minmax(75px, max-content) minmax(75px, max-content);
   background-color: @silver-gray;
 
   @media (min-width: @middle-width) {
     grid-column: 1 e("/") -1;
+    grid-template-rows: minmax(40px, max-content) minmax(75px, max-content) minmax(75px, max-content) minmax(75px, max-content);
     padding-top: 7px;
     padding-bottom: 15px;
     background-color: @basic-white;
+  }
+  @media (min-width: @large-width) {
+  grid-template-rows: minmax(96px, max-content) minmax(76px, max-content) minmax(76px, max-content) minmax(76px, max-content);
   }
 }
 
@@ -227,7 +233,6 @@
 }
 
 .form__apps-item {
-  margin-bottom: 45px;
   grid-column: 2 e("/") 3;
 
 

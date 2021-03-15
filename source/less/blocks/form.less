@@ -234,7 +234,10 @@
 }
 
 .form__apps-item {
+  position: relative;
   grid-column: 2 e("/") 3;
+  z-index: 50;
+
 
 
   @media (min-width: @middle-width) {
@@ -275,7 +278,7 @@
 
   @media (min-width: @large-width) {
     padding-top: 30px;
-    padding-left: 36px;
+    margin-left: 69px;
     padding-bottom: 0;
   }
 }
@@ -527,6 +530,7 @@
 }
 
 .form__contacts-input {
+  position: relative;
   display: block;
   font-size: 18px;
   line-height: 30px;
@@ -536,6 +540,7 @@
   padding-top: 15px;
   padding-bottom: 14px;
   padding-left: 20px;
+  z-index: 50;
 
   @media (min-width: @middle-width) {
     margin-left: 58px;
@@ -615,8 +620,10 @@
 
 
 .form__achievements-wrapper {
+  position: relative;
   padding-bottom: 13px;
   grid-column: 2 e("/") 3;
+  z-index: 50;
 
   @media (min-width: @middle-width) {
     padding-bottom: 25px;
@@ -634,6 +641,7 @@
 }
 
 .form__textarea {
+  position: relative;
   font-family: @font-main;
   font-size: 18px;
   line-height: 30px;
@@ -647,6 +655,7 @@
   border-radius: 2px;
   padding: 13px 20px;
   margin-bottom: 44px;
+  z-index: 50;
 
   @media (min-width: @middle-width) {
     width: 500px;

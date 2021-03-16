@@ -399,6 +399,14 @@
   padding-left: 20px;
 }
 
+.form__text--input:hover {
+  border: 2px solid @basic-gray;
+}
+
+.form__text--input:active {
+  border: 2px solid @basic-pink;
+}
+
 .form__contacts-text {
   display: block;
   line-height: 30px;
@@ -435,7 +443,7 @@
       position: absolute;
       top: 2px;
       right: 59px;
-      z-index: 1;
+      z-index: 4;
     }
 
     &::after {
@@ -454,9 +462,9 @@
 
   @media (min-width: @large-width) {
     &::before {
-      width: 61px;
-      height: 61px;
-      right: 35px;
+      width: 59px;
+      height: 59px;
+      right: 37px;
     }
 
     &::after {
@@ -486,7 +494,7 @@
 
   @media (min-width: @middle-width) {
     &::before {
-      right: 58px;
+      right: 60px;
     }
   }
 }
@@ -540,7 +548,7 @@
   padding-top: 15px;
   padding-bottom: 14px;
   padding-left: 20px;
-  z-index: 50;
+  z-index: 1;
 
   @media (min-width: @middle-width) {
     margin-left: 58px;
@@ -552,6 +560,14 @@
   @media (min-width: @large-width) {
     width: 375px;
   }
+}
+
+.form__contacts-input:hover {
+  border: 2px solid @basic-gray;
+}
+
+.form__contacts-input:active {
+  border: 2px solid @basic-pink;
 }
 
 .form__contacts-item:last-of-type .form__contacts-input {
@@ -671,6 +687,14 @@
   }
 }
 
+.form__textarea:hover {
+  border: 2px solid @basic-gray;
+}
+
+.form__textarea:active {
+  border: 2px solid @basic-pink;
+}
+
 .form__button {
   grid-column: 2 e("/") 3;
 
@@ -759,6 +783,14 @@
   border-radius: 1px;
 }
 
+.form__checkbox-label:hover::before {
+  border: 2px solid @basic-gray;
+}
+
+.form__checkbox-label:active::before {
+  border: 2px solid @basic-pink;
+}
+
 .form__checkbox:checked+.form__checkbox-label::after {
   content: "";
   position: absolute;
@@ -796,6 +828,14 @@
   background: @basic-white;
   border: 2px solid @light-gray;
   border-radius: 50%;
+}
+
+.form__radio-label:hover::before {
+  border: 2px solid @basic-gray;
+}
+
+.form__radio-label:active::before {
+  border: 2px solid @basic-pink;
 }
 
 .form__radio:checked+.form__radio-label::after {

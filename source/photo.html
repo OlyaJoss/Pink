@@ -12,8 +12,8 @@
   <header class="page-header page-header--catalog">
     <div class="page-header__wrapper page-header__wrapper--opened">
       <div class="page-header__wrapper-top page-header__wrapper-top--opened">
-        <a class="page-header__logo" href="index.html">
-          <svg>
+        <a class="page-header__logo" href="index.html" aria-label="Логотип приложения Пинк">
+          <svg width="74.426px" height="22.859px">
             <g class="page-header__logo-small">
               <path
                 d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z" />
@@ -67,7 +67,7 @@
             </g>
           </svg>
         </a>
-        <button class="page-header__toggle" type="button">
+        <button class="page-header__toggle page-header__toggle--opened" type="button">
           <span class="visually-hidden">Меню</span>
         </button>
       </div>
@@ -119,13 +119,14 @@
       <a href="" class="gallery__big-photo">
         <picture>
           <source type="image/webp" media="(min-width: 960px)"
-            srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x">
+            srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 660px)"
-            srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/panorama-mobile.webp 1x, img/panorama-mobile@2x.webp 2x">
+            srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
           <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-          <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото">
+          <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320px" height="137px"
+            alt="Фото">
         </picture>
       </a>
       <span class="gallery__item-accent">Панорама дня</span>
@@ -139,7 +140,7 @@
         </p>
         <div class="gallery__likes">
           <span class="gallery__likes-text">Нравится: 215</span>
-          <button class="gallery__likes-button" type="button">
+          <button class="gallery__likes-button" type="button" aria-label="Кнопка для Лайка">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99"
               enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
@@ -159,17 +160,17 @@
           <a href="">
             <picture>
               <source type="image/webp" media="(min-width: 960px)"
-                srcset="img/photo-car-desktop.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)"
-                srcset="img/photo-car-tablet.webp 1x, img/photo-car-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-car-mobile.webp 1x, img/photo-car-mobile@2x.webp 2x">
+                srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
 
               <source media="(min-width: 960px)"
                 srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
                 srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
               <img class="gallery__photo" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x"
-                alt="Фото">
+                width="280px" height="180px" alt="Фото">
             </picture>
           </a>
           <div class="gallery__description-wrapper">
@@ -181,7 +182,7 @@
             </p>
             <div class="gallery__likes">
               <span class="gallery__likes-text">Нравится: 356</span>
-              <button class="gallery__likes-button" type="button">
+              <button class="gallery__likes-button" type="button" aria-label="Кнопка для Лайка">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99"
                   enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
@@ -198,17 +199,18 @@
           <a href="">
             <picture>
               <source type="image/webp" media="(min-width: 960px)"
-                srcset="img/photo-drumset-desktop.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)"
-                srcset="img/photo-drumset-tablet.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-drumset-mobile.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+                srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
 
               <source media="(min-width: 960px)"
                 srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
                 srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
               <img class="gallery__photo" src="img/photo-drumset-mobile@1x.jpg"
-                srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото">
+                srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280px" height="180px" alt="Фото">
             </picture>
           </a>
           <div class="gallery__description-wrapper">
@@ -218,7 +220,7 @@
             <p class="gallery__item-description">Соседи будут рады!</p>
             <div class="gallery__likes">
               <span class="gallery__likes-text">Нравится: 666</span>
-              <button class="gallery__likes-button" type="button">
+              <button class="gallery__likes-button" type="button" aria-label="Кнопка для Лайка">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99"
                   enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
@@ -235,17 +237,17 @@
           <a href="">
             <picture>
               <source type="image/webp" media="(min-width: 960px)"
-                srcset="img/photo-window-desktop.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)"
-                srcset="img/photo-window-tablet.webp 1x, img/photo-window-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-window-mobile.webp 1x, img/photo-window-mobile@2x.webp 2x">
+                srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
 
               <source media="(min-width: 960px)"
                 srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
                 srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
               <img class="gallery__photo" src="img/photo-window-mobile@1x.jpg"
-                srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото">
+                srcset="img/photo-window-mobile@2x.jpg 2x" width="280px" height="180px" alt="Фото">
             </picture>
           </a>
           <div class="gallery__description-wrapper">
@@ -257,7 +259,7 @@
             </p>
             <div class="gallery__likes">
               <span class="gallery__likes-text">Нравится: 215</span>
-              <button class="gallery__likes-button" type="button">
+              <button class="gallery__likes-button" type="button" aria-label="Кнопка для Лайка">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99"
                   enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
@@ -274,17 +276,17 @@
           <a href="">
             <picture>
               <source type="image/webp" media="(min-width: 960px)"
-                srcset="img/photo-fair-desktop.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)"
-                srcset="img/photo-fair-tablet.webp 1x, img/photo-fair-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-fair-mobile.webp 1x, img/photo-fair-mobile@2x.webp 2x">
+                srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
 
               <source media="(min-width: 960px)"
                 srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
                 srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
               <img class="gallery__photo" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x"
-                alt="Фото">
+                width="280px" height="180px" alt="Фото">
             </picture>
           </a>
           <div class="gallery__description-wrapper">
@@ -294,7 +296,7 @@
             <p class="gallery__item-description">Самая кубанская в мире!</p>
             <div class="gallery__likes">
               <span class="gallery__likes-text">Нравится: 4</span>
-              <button class="gallery__likes-button" type="button">
+              <button class="gallery__likes-button" type="button" aria-label="Кнопка для Лайка">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99"
                   enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
@@ -311,17 +313,17 @@
           <a href="">
             <picture>
               <source type="image/webp" media="(min-width: 960px)"
-                srcset="img/photo-pov-desktop.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)"
-                srcset="img/photo-pov-tablet.webp 1x, img/photo-pov-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-pov-mobile.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+                srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
 
               <source media="(min-width: 960px)"
                 srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
                 srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
               <img class="gallery__photo" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x"
-                alt="Фото">
+                width="280px" height="180px" alt="Фото">
             </picture>
           </a>
           <div class="gallery__description-wrapper">
@@ -331,7 +333,7 @@
             <p class="gallery__item-description">Где снег-то?</p>
             <div class="gallery__likes">
               <span class="gallery__likes-text">Нравится: 150</span>
-              <button class="gallery__likes-button" type="button">
+              <button class="gallery__likes-button" type="button" aria-label="Кнопка для Лайка">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99"
                   enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
@@ -348,17 +350,17 @@
           <a href="">
             <picture>
               <source type="image/webp" media="(min-width: 960px)"
-                srcset="img/photo-wing-desktop.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)"
-                srcset="img/photo-wing-tablet.webp 1x, img/photo-wing-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-wing-mobile.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+                srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
 
               <source media="(min-width: 960px)"
                 srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
                 srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
               <img class="gallery__photo" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x"
-                alt="Фото">
+                width="280px" height="180px" alt="Фото">
             </picture>
           </a>
           <div class="gallery__description-wrapper">
@@ -368,7 +370,7 @@
             <p class="gallery__item-description">Всем GM и взаимные лайки!</p>
             <div class="gallery__likes">
               <span class="gallery__likes-text">Нравится: 2560</span>
-              <button class="gallery__likes-button" type="button">
+              <button class="gallery__likes-button" type="button" aria-label="Кнопка для Лайка">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99"
                   enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
@@ -396,12 +398,12 @@
             <source media="(min-width: 660px)"
               srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
             <img class="gallery__photo" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x"
-              alt="Фото">
+              width="280px" height="374px" alt="Фото">
           </picture>
         </div>
         <div class="filter__tools-wrapper">
           <ul class="filter__tools">
-            <li><button class="filter__icon filter__icon--crop" type="button">
+            <li><button class="filter__icon filter__icon--crop" type="button" aria-label="Инструмент Обрезать">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                   <path fill="none" d="M0,0h48v48H0V0z" />
@@ -413,7 +415,7 @@
                 <button class="filter__button-scale" type="button"></button>
               </div>
             </li>
-            <li><button class="filter__icon filter__icon--fill" type="button">
+            <li><button class="filter__icon filter__icon--fill" type="button" aria-label="Инструмент Заливка">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="48px" height="52px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                   <path fill="none" d="M0,0h48v48H0V0z" />
@@ -426,7 +428,7 @@
                 <button class="filter__button-scale" type="button"></button>
               </div>
             </li>
-            <li><button class="filter__icon filter__icon--contrast" type="button">
+            <li><button class="filter__icon filter__icon--contrast" type="button" aria-label="Инструмент Контраст">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92"
                   enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
@@ -454,7 +456,7 @@
   <footer class="page-footer container">
     <div class="page-footer">
       <div class="page-footer__logo">
-        <a class="page-footer__logo-link" href="index.html">
+        <a class="page-footer__logo-link" href="index.html" aria-label="Логотип приложения Пинк">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375"
             xml:space="preserve">
@@ -505,7 +507,8 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy"
+              aria-label="Ссылка на сайт Twitter">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="18px" height="14px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663"
                 xml:space="preserve">
@@ -515,17 +518,18 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944"
-                xml:space="preserve">
-                <path
-                  d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z" />
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Ссылка на сайт Facebook">
+              <svg xmlns=" http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944"
+              xml:space="preserve">
+              <path
+                d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z" />
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.youtube.com/htmlacademy">
+            <a class="social__link social__link--instagram" href="https://www.youtube.com/htmlacademy"
+              aria-label="Ссылка на сайт Youtube">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="15px" height="13px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96"
                 xml:space="preserve">
@@ -538,7 +542,8 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="Ссылка на сайт Html Academy">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09"
             xml:space="preserve">

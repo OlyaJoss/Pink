@@ -4,9 +4,9 @@ let navigationBackground = document.querySelector(".page-header__wrapper");
 
 
 let clickButtonHandler = function () {
-
-  navigationButton.classList.toggle("page-header__toggle--opened");
-  navigationButton.classList.toggle("page-header__toggle--closed");
+  if (navigationButton.classList.contains("page-header__toggle--opened")) {
+    navigationButton.classList.add("page-header__toggle--closed")
+  };
 
   navigationMenu.classList.toggle("main-nav--opened");
   navigationMenu.classList.toggle("main-nav--closed");

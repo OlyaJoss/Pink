@@ -11,7 +11,7 @@
 
 <body class="page__body">
 
-  <header class="page-header page-header--catalog page-header--catalog-opened">
+  <header class="page-header page-header--catalog">
     <div class="page-header__wrapper page-header__wrapper--opened">
       <div class="page-header__wrapper-top page-header__wrapper-top--opened">
         <a class="page-header__logo" href="index.html" aria-label="Логотип приложения Пинк">
@@ -69,7 +69,7 @@
             </g>
           </svg>
         </a>
-        <button class="page-header__toggle" type="button">
+        <button class="page-header__toggle page-header__toggle--opened" type="button">
           <span class="visually-hidden">Меню</span>
         </button>
       </div>
@@ -147,37 +147,37 @@
             <p class="form__item">
               <input class="form__checkbox visually-hidden" id="ckeckbox-1" type="checkbox" name="remember" value="text"
                 checked>
-              <label class="form__checkbox-label" for="ckeckbox-1">
+              <label class="form__checkbox-label" tabindex="1" for="ckeckbox-1">
                 Сделал селфи с акулой</label>
             </p>
             <p class="form__item">
               <input class="form__checkbox visually-hidden" id="ckeckbox-2" type="checkbox" name="remember" value="text"
                 checked>
-              <label class="form__checkbox-label" for="ckeckbox-2">
+              <label class="form__checkbox-label" tabindex="2" for="ckeckbox-2">
                 Обгорел на пляже</label>
             </p>
             <p class="form__item">
               <input class="form__checkbox visually-hidden" id="ckeckbox-3" type="checkbox" name="remember"
                 value="text">
-              <label class="form__checkbox-label" for="ckeckbox-3">
+              <label class="form__checkbox-label" tabindex="3" for="ckeckbox-3">
                 Видел Чака Норриса</label>
             </p>
             <p class="form__item">
               <input class="form__checkbox visually-hidden" id="ckeckbox-4" type="checkbox" name="remember"
                 value="text">
-              <label class="form__checkbox-label" for="ckeckbox-4">
+              <label class="form__checkbox-label" tabindex="4" for="ckeckbox-4">
                 Накупил сувениров</label>
             </p>
             <p class="form__item">
               <input class="form__checkbox visually-hidden" id="ckeckbox-5" type="checkbox" name="remember" value="text"
                 checked>
-              <label class="form__checkbox-label" for="ckeckbox-5">
+              <label class="form__checkbox-label" tabindex="5" for="ckeckbox-5">
                 Удержал башню</label>
             </p>
             <p class="form__item">
               <input class="form__checkbox visually-hidden" id="ckeckbox-6" type="checkbox" name="remember"
                 value="text">
-              <label class="form__checkbox-label" for="ckeckbox-6">
+              <label class="form__checkbox-label" tabindex="5" for="ckeckbox-6">
                 Разгромил отель</label>
             </p>
           </div>
@@ -202,17 +202,17 @@
           <p class="form__apps-item">
             <input class="form__radio visually-hidden" type="radio" id="iOS" name="pink-app" value="pink-for-iOS"
               checked>
-            <label class="form__radio-label" for="iOS">Pink для iOS</label>
+            <label class="form__radio-label" tabindex="6" for="iOS">Pink для iOS</label>
           </p>
           <p class="form__apps-item">
             <input class="form__radio visually-hidden" type="radio" id="Android" name="pink-app"
               value="pink-for-Android">
-            <label class="form__radio-label" for="Android">Pink на Android</label>
+            <label class="form__radio-label" tabindex="7" for="Android">Pink на Android</label>
           </p>
           <p class="form__apps-item">
             <input class="form__radio visually-hidden" type="radio" id="Windows" name="pink-app"
               value="pink-for-Windows">
-            <label class="form__radio-label" for="Windows">Windows Phone</label>
+            <label class="form__radio-label" tabindex="8" for="Windows">Windows Phone</label>
           </p>
         </div>
 

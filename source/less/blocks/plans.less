@@ -14,7 +14,7 @@
   &::after {
     content: "";
     position: absolute;
-    background-image: url('../img/bg-triangle-white.svg');
+    background-image: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 59px;
@@ -44,7 +44,7 @@
   transform: translateX(-198%);
 
   @media (min-width: @middle-width) {
-    transform: translate(0px);
+    transform: translate(0);
   }
 }
 
@@ -108,7 +108,7 @@
 
   @media (min-width: @middle-width) {
     line-height: 19px;
-    transform: translateX(-69px) translateY(0px) rotate(-45deg);
+    transform: translateX(-69px) translateY(0) rotate(-45deg);
   }
 
   @media (min-width: @large-width) {

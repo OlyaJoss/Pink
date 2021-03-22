@@ -88,7 +88,7 @@
   display: none;
 
   @media (min-width: @middle-width) {
-    display: block;
+    display: inline-block;
   }
 }
 
@@ -133,14 +133,6 @@
     padding-right: 35px;
     padding-bottom: 24px;
     padding-top: 29px;
-  }
-}
-
-.form__promo-extra-text {
-  display: none;
-
-  @media (min-width: @middle-width) {
-    display: inline-block;
   }
 }
 
@@ -211,7 +203,7 @@
   }
 }
 
-.form__apps:before {
+.form__apps::before {
   @media (min-width: @middle-width) {
     content: "";
     position: absolute;
@@ -238,8 +230,6 @@
   grid-column: 2 e("/") 3;
   z-index: 50;
 
-
-
   @media (min-width: @middle-width) {
     margin-top: 23px;
     margin-left: 58px;
@@ -252,7 +242,6 @@
     padding-top: 0;
     padding-bottom: 0;
     margin-left: 109px;
-
   }
 }
 
@@ -292,7 +281,6 @@
   }
 
   @media (min-width: @large-width) {
-
     &::before {
       content: "";
       position: absolute;
@@ -478,7 +466,6 @@
   padding-top: 0;
 
   @media (min-width: @middle-width) {
-
     &::after {
       content: "";
       position: absolute;
@@ -519,7 +506,6 @@
       border-radius: 2px;
       z-index: 1;
     }
-
   }
 
   @media (min-width: @large-width) {
@@ -654,7 +640,7 @@
     grid-template-rows: auto auto;
     grid-auto-flow: column;
     max-height: 150px;
-    transform: translateX(6%);
+    padding-left: 57px;
   }
 }
 
@@ -794,19 +780,19 @@
   border-radius: 1px;
 }
 
-.form__checkbox-label:hover::before,
-.form__checkbox-label:focus::before {
+.form__checkbox:hover+.form__checkbox-label::before,
+.form__checkbox:focus+.form__checkbox-label::before {
   border: 2px solid @basic-gray;
 }
 
-.form__checkbox-label:active::before {
+.form__checkbox:active+.form__checkbox-label::before {
   border: 2px solid @basic-pink;
 }
 
 .form__checkbox:checked+.form__checkbox-label::after {
   content: "";
   position: absolute;
-  background-image: url('../img/pink-tick.svg');
+  background-image: url("../img/pink-tick.svg");
   background-repeat: no-repeat;
   left: 9px;
   top: 11px;
@@ -842,12 +828,12 @@
   border-radius: 50%;
 }
 
-.form__radio-label:hover::before,
-.form__radio-label:focus::before {
+.form__radio:hover+.form__radio-label::before,
+.form__radio:focus+.form__radio-label::before {
   border: 2px solid @basic-gray;
 }
 
-.form__radio-label:active::before {
+.form__radio:active+.form__radio-label::before {
   border: 2px solid @basic-pink;
 }
 

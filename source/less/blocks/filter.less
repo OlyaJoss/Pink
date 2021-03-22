@@ -161,7 +161,6 @@
 }
 
 .filter__scale--crop .filter__button-scale {
-
   @media (min-width: @middle-width) {
     left: 73%;
   }
@@ -233,15 +232,6 @@
   }
 }
 
-.filter__button--cancel {
-
-  @media (min-width: @large-width) {
-    padding-left: 55px;
-    padding-right: 55px;
-    margin-top: 5px;
-  }
-}
-
 .filter__button--load:hover {
   color: @basic-white;
   background-color: @basic-pink;
@@ -254,6 +244,12 @@
 .filter__button--cancel {
   color: fade(@basic-gray, 10%);
   border: 3px solid fade(@basic-gray, 10%);
+
+  @media (min-width: @large-width) {
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 5px;
+  }
 }
 
 .filter__button--cancel:hover {

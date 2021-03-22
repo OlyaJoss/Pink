@@ -76,6 +76,7 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
   gulp.watch("source/*.html", gulp.series("buildHtml")).on("change", sync.reload);
+
 };
 
 exports.default = gulp.series(
@@ -108,6 +109,7 @@ const createWebp = () => {
 };
 
 exports.createWebp = createWebp;
+
 
 // Sprite
 
@@ -166,3 +168,4 @@ exports.default = gulp.series(
   server,
   watcher
 );
+

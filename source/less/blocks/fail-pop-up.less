@@ -1,4 +1,4 @@
-.succes-pop-up {
+.fail-pop-up {
   display: block;
   position: fixed;
   top: 50%;
@@ -21,55 +21,49 @@
   }
 }
 
-.succes-pop-up__title {
+.fail-pop-up__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
   color: @basic-black;
-  padding-top: 44px;
+  padding-top: 39px;
   margin: 0;
 
   @media (min-width: @middle-width) {
     font-size: 30px;
     line-height: 40px;
     margin: 0 auto;
-    padding-top: 39px;
+    padding-top: 42px;
   }
 }
 
-.succes-pop-up__info {
+.fail-pop-up__info {
   font-weight: 400;
   font-size: 14px;
-  width: 266px;
   line-height: 24px;
   align-items: center;
   text-align: center;
   color: @basic-gray;
   margin: 0 auto;
   padding-top: 25px;
-  padding-bottom: 34px;
+  padding-bottom: 41px;
 
   @media (min-width: @middle-width) {
     font-size: 18px;
     line-height: 24px;
-    padding-top: 22px;
-    padding-bottom: 30px;
-    width: 378px;
+    padding-bottom: 35px;
+    padding-top: 21px;
+    width: 322px;
   }
 
   @media (min-width: @large-width) {
-    padding-bottom: 39px;
+    padding-bottom: 63px;
+    width: 360px;
   }
 }
 
-.succes-pop-up__button-wrapper {
-  background-color: @silver-gray;
-  padding-top: 50px;
-  padding-bottom: 49px;
-}
-
-.succes-pop-up__button {
+.fail-pop-up__button {
   display: block;
   font-family: @font-main;
   font-size: 18px;
@@ -79,21 +73,22 @@
   background-color: @basic-green;
   color: @basic-white;
   margin: 0 auto;
+  margin-bottom: 49px;
   text-transform: uppercase;
-  padding: 15px 68px;
+  padding: 15px 125px;
   border: 2px solid @basic-green;
   border-radius: 2px;
 
   @media (min-width: @middle-width) {
-    padding: 15px 76px;
+    padding: 15px 135px;
   }
 
   @media (min-width: @large-width) {
-    padding: 15px 155px;
+    margin-bottom: 0;
   }
 }
 
-.succes-pop-up__br-title {
+.fail-pop-up__br {
   display: none;
 
   @media (min-width: @middle-width) {
@@ -105,26 +100,12 @@
   }
 }
 
-.succes-pop-up__br-small {
-  display: inline;
-
-  @media (min-width: @middle-width) {
-    display: none;
-  }
+.fail-pop-up__button-wrapper {
+  background-color: @basic-white;
 
   @media (min-width: @large-width) {
-    display: none;
-  }
-}
-
-.succes-pop-up__br-middle {
-  display: none;
-
-  @media (min-width: @middle-width) {
-    display: inline;
-  }
-
-  @media (min-width: @large-width) {
-    display: none;
+    background-color: @silver-gray;
+    padding-top: 50px;
+    padding-bottom: 49px;
   }
 }

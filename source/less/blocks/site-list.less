@@ -22,8 +22,8 @@
     justify-content: flex-start;
     padding-top: 31px;
     margin: 0;
-    margin-right: 12px;
     margin-left: 180px;
+    width: auto;
   }
 }
 
@@ -58,6 +58,10 @@
       color: @basic-pink;
     }
 
+    &:active {
+      color: fade(@basic-white, 30%);
+    }
+
     &--active {
       position: relative;
 
@@ -74,15 +78,7 @@
   }
 }
 
-.site-list {
-
-  @media (min-width: @large-width) {
-    width: auto;
-  }
-}
-
 .site-list__item {
-
   @media (min-width: @large-width) {
     margin-right: 79px;
   }

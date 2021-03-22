@@ -31,7 +31,7 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url('../img/icon-quotes.svg');
+      background-image: url("../img/icon-quotes.svg");
       background-repeat: no-repeat;
       background-size: contain;
       width: 79px;
@@ -55,17 +55,34 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url('../img/icon-review-arrow-left.svg');
+    background-image: url("../img/icon-review-arrow-left.svg");
     background-repeat: no-repeat;
     top: 213px;
     left: 0;
     width: 22px;
     height: 41px;
+    opacity: 0.3;
   }
 
   @media (min-width: @large-width) {
     display: block;
   }
+}
+
+.reviews__arrow-left:hover::before {
+  opacity: 0.6;
+}
+
+.reviews__arrow-left:active::before {
+  opacity: 0.1;
+}
+
+.reviews__arrow-right:hover::before {
+  opacity: 0.6;
+}
+
+.reviews__arrow-right:active::before {
+  opacity: 0.1;
 }
 
 .reviews__arrow-right {
@@ -79,12 +96,13 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url('../img/icon-review-arrow-right.svg');
+    background-image: url("../img/icon-review-arrow-right.svg");
     background-repeat: no-repeat;
     top: 213px;
     right: 0;
     width: 22px;
     height: 41px;
+    opacity: 0.3;
   }
 
   @media (min-width: @large-width) {
@@ -164,6 +182,14 @@
   height: 12px;
   padding: 0;
   opacity: 0.3;
+}
+
+.reviews__bullit-circle:hover {
+  opacity: 0.6;
+}
+
+.reviews__bullit-circle:active {
+  opacity: 0.1;
 }
 
 .reviews__bullit-item {

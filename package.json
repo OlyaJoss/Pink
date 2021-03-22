@@ -1,7 +1,7 @@
 {
   "name": "pink-20",
   "private": true,
-  "description": "Личный проект «Пинк» от HTML Academy",
+  "description": "Личный проект «Пинк» от HTML Academy",
   "devDependencies": {
     "autoprefixer": "^9.8.0",
     "browser-sync": "^2.26.14",

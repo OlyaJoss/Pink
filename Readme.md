@@ -1,6 +1,6 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-- Студент: [Ольга Вирясова](https://up.htmlacademy.ru/adaptive/20/user/1463495).
+- Студент: [Ольга](https://up.htmlacademy.ru/adaptive/20/user/1463495).
 - Наставник: (Александр Уразаев)[https://htmlacademy.ru/profile/urazaev].
 
 ---
